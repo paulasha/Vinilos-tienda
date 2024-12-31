@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black:#000000;
+    --light_green: #698D1C;
+    --dark_green: #445916;
+    --marron: #B47B26;
+    --rojo: #E85333;
+    --naranja: #FF8D00;
+    --amarillo: #F9CA1E;
+    --dark_grey: #303023;
+    --grey: #D3CECE;
+  }
+
+.black{
+    background-color: var(--black);
+}
+
+.light_green{
+    background-color: var(--light_green);
+}
+
+.dark_green{
+  background-color: var(--dark_green);
+}
+
+.brown{
+    background-color: var(--marron);
+}
+
+.red{
+    background-color: var(--rojo);
+}
+
+.orange{
+    background-color: var(--naranja);
+}
+
+.yellow{
+    background-color: var(--amarillo);
+}
+
+.dark_grey{
+    background-color: var(--dark_grey);
+}
+
+.grey{
+    background-color: var(--grey);
+}
+
+
+#losmasvendidos{
+    background-color: var(--black);
+        width: 100%;
+}
+
+.artistas img{
+    border-radius: 50%;
+    position: relative;
+}
+
+.big_poppa{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.big_poppa_img{
+    height: 15vh;
+    width: 15vh;
+    right: 23rem;
+}
+
+.leon_thomas{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.leon_thomas_img{
+    height: 22vh;
+    width: 22vh;
+    right: 27rem;
+    top: 8rem;
+}
+
+.usher{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.usher_img{
+    height: 14vh;
+    width: 14vh;
+    right: 23rem;
+    top: 9rem;
+}
+
+.sade{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.sade_img{
+    height: 22vh;
+    width: 22vh;
+    right: 25rem;
+    top: 18rem;
+}
+
+.a_tribe_called_quest{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.a_tribe_called_quest_img{
+    height: 22vh;
+    width: 22vh;
+    right: 14rem;
+    top: 3rem;
+}
+
+.justin_bieber{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.justin_bieber_img{
+    height: 14vh;
+    width: 14vh;
+    right: 17.25rem;
+    top: -5.25rem;
+}
+
+.kendrick_lamar{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.kendrick_lamar_img{
+    height: 14vh;
+    width: 14vh;
+    right: 15rem;
+    top: 15.5rem;
+}
+
+--------a continuar --------
+
+.img-bl{
+    transition: .2s; 
+}
+
+.img-bl-hover:hover{
+    opacity: 50%;
+}
+
+/* .hover-text{
+    opacity: 0%;
+    position: relative;
+    right: 21rem;
+    bottom: 5.5rem;
+}
+
+.hover-text:hover{
+    opacity: 100%;
+} */
+
+
+/* flecha subir */
+#flecha{
+    width: 48px;
+    border-radius: 900px;
+    background-color: #256063;
+    box-shadow: 0px 18px 38px -16px black;
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    z-index: 900;
+    transition: 0.3s;
+  }
