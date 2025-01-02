@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 :root {
     --black:#000000;
     --light_green: #698D1C;
@@ -53,10 +58,113 @@
     background-color: var(--grey);
 }
 
+/* scroll indicator */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: var(--dark_grey);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.progress-bar {
+    height: 6px;
+    background: var(--grey);
+    width: 0%;
+}
+
+/* menu */
+
+#menu{
+    transition-duration: 0.3s;
+    background-color: var(--grey);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-brand img{
+    width: 100%;
+    height: 10vh;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+a:visited,
+a:link {
+    font-family: "Courier Prime", monospace;
+    text-decoration: none;
+    color: white;
+}
+
+#logo-menu, #logo-footer, #logo-menu-movil{
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+#logo-menu:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#logo-footer:hover{
+  text-decoration: var(--black);
+}
+
+.nav-item{
+    font-family: "Courier Prime", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.nav-item:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.navbar-toggler {
+    outline: none; 
+    border: none; 
+}
+
+  
+.navbar-toggler:focus {
+    box-shadow: none; 
+    outline: none; 
+}
+
+.close-menu{
+  display: none;
+}
+
+.scrolled{
+    width: 80vw;
+    border-radius: 90px;
+    margin-top: 1rem;
+}
+
+/* Los mas Vendidos */
 
 #losmasvendidos{
     background-color: var(--black);
-        width: 100%;
+    width: 100%;
+}
+
+.artistas{
+    height: 120vh;
 }
 
 .artistas img{
@@ -73,7 +181,8 @@
 .big_poppa_img{
     height: 15vh;
     width: 15vh;
-    right: 23rem;
+    right: 37rem;
+    top: 4rem;
 }
 
 .leon_thomas{
@@ -83,10 +192,10 @@
 }
 
 .leon_thomas_img{
-    height: 22vh;
-    width: 22vh;
-    right: 27rem;
-    top: 8rem;
+    height: 26vh;
+    width: 26vh;
+    right: 44rem;
+    top: 11rem;
 }
 
 .usher{
@@ -98,8 +207,8 @@
 .usher_img{
     height: 14vh;
     width: 14vh;
-    right: 23rem;
-    top: 9rem;
+    right: 34rem;
+    top: 22rem;
 }
 
 .sade{
@@ -109,10 +218,10 @@
 }
 
 .sade_img{
-    height: 22vh;
-    width: 22vh;
-    right: 25rem;
-    top: 18rem;
+    height: 30vh;
+    width: 30vh;
+    right: 42rem;
+    top: 29rem;
 }
 
 .a_tribe_called_quest{
@@ -122,10 +231,10 @@
 }
 
 .a_tribe_called_quest_img{
-    height: 22vh;
-    width: 22vh;
-    right: 14rem;
-    top: 3rem;
+    height: 26vh;
+    width: 26vh;
+    right: 26.5rem;
+    top: 9rem;
 }
 
 .justin_bieber{
@@ -137,8 +246,8 @@
 .justin_bieber_img{
     height: 14vh;
     width: 14vh;
-    right: 17.25rem;
-    top: -5.25rem;
+    right: 17.5rem;
+    top: 21rem;
 }
 
 .kendrick_lamar{
@@ -148,10 +257,179 @@
 }
 
 .kendrick_lamar_img{
-    height: 14vh;
-    width: 14vh;
-    right: 15rem;
-    top: 15.5rem;
+    height: 20vh;
+    width: 20vh;
+    right: 23.5rem;
+    top: 27.5rem;
+}
+
+.cent{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.cent_img{
+    height: 18vh;
+    width: 18vh;
+    right: 14rem;
+    top: 6.5rem;
+}
+
+.sza{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.sza_img{
+    height: 38vh;
+    width: 38vh;
+    right: 3rem;
+    top: 13.5rem;
+}
+
+.frank_ocean{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.frank_ocean_img{
+    height: 22vh;
+    width: 22vh;
+    right: 12rem;
+    top: 32rem;
+}
+
+.earth_wind_fire{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.earth_wind_fire_img{
+    height: 24vh;
+    width: 24vh;
+    right: -11rem;
+    top: 6rem;
+}
+
+.bob_marley{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.bob_marley_img{
+    height: 36vh;
+    width: 36vh;
+    right: -17rem;
+    top: 18.5rem;
+}
+
+.tyler_the_creator{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.tyler_the_creator_img{
+    height: 22vh;
+    width: 22vh;
+    right: -2.75rem;
+    top: 34.25rem;
+}
+
+.eminem{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.eminem_img{
+    height: 18vh;
+    width: 18vh;
+    right: -24rem;
+    top: 3rem;
+}
+
+.prince{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.prince_img{
+    height: 16vh;
+    width: 16vh;
+    right: -28rem;
+    top: 12.5rem;
+}
+
+.stevie_wonder{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.stevie_wonder_img{
+    height: 20vh;
+    width: 20vh;
+    right: -33rem;
+    top: 20.5rem;
+}
+
+.amy_winehouse{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.amy_winehouse_img{
+    height: 22vh;
+    width: 22vh;
+    right: -32rem;
+    top: 32.5rem;
+}
+
+.lauren_hill{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.lauren_hill_img{
+    height: 38vh;
+    width: 38vh;
+    right: -43rem;
+    top: 2.5rem;
+}
+
+.erykah_badu{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.erykah_badu_img{
+    height: 22vh;
+    width: 22vh;
+    right: -45rem;
+    top: 23.5rem;
+}
+
+.mf_doom{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.mf_doom_img{
+    height: 16vh;
+    width: 16vh;
+    right: -43.5rem;
+    top: 35.5rem;
 }
 
 --------a continuar --------
@@ -164,16 +442,8 @@
     opacity: 50%;
 }
 
-/* .hover-text{
-    opacity: 0%;
-    position: relative;
-    right: 21rem;
-    bottom: 5.5rem;
-}
 
-.hover-text:hover{
-    opacity: 100%;
-} */
+
 
 
 /* flecha subir */
