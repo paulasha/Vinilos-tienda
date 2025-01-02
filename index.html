@@ -24,30 +24,135 @@
 
      <!-- JQUERY -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     
      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DA-RECORDS</title>
-        <link rel="stylesheet" href="styles.css">
-      </head>
-      <body>
-        <div class="container">
-          <div class="image-text">
-            <img src="img/darecords.png" alt="Vinilo" class="vinyl-image">
-            <div class="text-overlay">
-              <span class="black">D</span>
-              <span class="light">A-RECORD</span>
-              <span class="black">S</span>
-            </div>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DA-RECORDS</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <!-- Contenedor de DA-RECORDS -->
+      <div class="container-darecords">
+          <div class="image-text-darecords">
+              <img src="img/darecords.png" alt="Vinilo" class="vinyl-image">
+              <div class="text-overlay-darecords">
+                  <span class="black">D</span>
+                  <span class="light">A-RECORD</span>
+                  <span class="black">S</span>
+              </div>
           </div>
-          <div class="arrow">
-            <span>↓</span>
+          <div class="arrow-darecords">
+              <span>↓</span>
           </div>
+      </div>
+  
+      <!-- Contenedor de WHAT WE ARE -->
+      <div class="container-what-we-are">
+          <div class="circles-what">
+              <div class="circle-brown"></div>
+              <div class="circle-green"></div>
+              <div class="circle-orange"></div>
+          </div>
+          <div class="title-what-we-are">
+              <h1>WHAT</h1>
+              <h1>WE</h1>
+              <h1>ARE</h1>
+          </div>
+          <div class="description-what">
+              <p>
+                  <span class="highlight-what">El concepto</span> es una tienda de discos que vende vinilos de distintos géneros y condiciones, 
+                  además de ofrecer un espacio para que artistas y clientes personalicen sus propios discos con maquinaria profesional. 
+                  También incluye una cafetería para escuchar música, charlar y descubrir nuevos álbumes. Para dinamizar el ambiente, 
+                  se organizarán eventos semanales con artistas emergentes y consagrados, promoviendo la música y atrayendo más público.
+              </p>
+          </div>
+      </div>
+
+      <canvas id="trailing-line"></canvas>
+  </body>
+    
+
+      <!-- Sección de Newsletter -->
+      <section id="newsletter-section">
+        <div class="newsletter-content">
+            <h1 class="main-title">NUESTRA NEWSLETTER</h1>
+            <button class="subscribe-button">¡SUSCRIBIRME AHORA!</button>
         </div>
-      </body>
+        <div class="social-media">
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+      </section>
+</main>
+
+
+
+<footer id="footer-vinilos">
+  <div class="vinilos-footer-bottom"></div>
+    <div class="vinilos-footer-content">  
+        <div class="vinilos-subscribe-section">
+            <h2>Suscríbete para estar atento de nuestras últimas noticias...</h2>
+            <form class="motorlord-subscribe-form">
+                <input type="email" placeholder="Escribe aquí tu email">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="motorlord-links-section">
+            <div class="motorlord-footer-column">
+                <h3>Sobre MOTORLOARD</h3>
+                <ul>
+                    <li><a href="#">¿Quiénes somos?</a></li>
+                    <li><a href="#">Nuestra filosofía</a></li>
+                    <li><a href="#">Nuestro objetivo</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="motorlord-footer-column">
+                <h3>Información legal</h3>
+                <ul>
+                    <li><a href="#">Configuración de Cookies</a></li>
+                    <li><a href="#">Menciones legales</a></li>
+                    <li><a href="#">Política de protección de datos</a></li>
+                    <li><a href="#">Información de consumidores</a></li>
+                    <li><a href="#">Condiciones generales de uso</a></li>
+                </ul>
+            </div>
+            <div class="motorlord-footer-column">
+                <h3>Formas de pago</h3>
+                <div class="motorlord-payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+            <div class="motorlord-footer-column">
+                <h3>Redes sociales</h3>
+                <div class="motorlord-social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="motorlord-footer-bottom">
+        <p>All rights reserved by ©MOTORLOARD 2024</p>
+    </div>
+
+
+
 
     
+</footer>
+
 
 
 </html>

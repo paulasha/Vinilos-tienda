@@ -1,56 +1,362 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d1cec9; /* Fondo general gris claro */
+}
+
+/* Contenedor de DA-RECORDS */
+.container-darecords {
+  background-color: #d1cec9; /* Fondo específico para DA-RECORDS */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.image-text-darecords {
+  position: relative;
+  display: inline-block;
+}
+
+.vinyl-image {
+  display: block;
+  width: 600px;
+  height: 600px;
+}
+
+.text-overlay-darecords {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.text-overlay-darecords .black {
+  color: #000; /* Negro para D y S */
+}
+
+.text-overlay-darecords .light {
+  color: #f2eaea; /* Color claro para A-RECORD */
+}
+
+.arrow-darecords {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #000;
+}
+
+/* Contenedor de WHAT WE ARE */
+.container-what-we-are {
+  background-color: #e4e8f0; /* Fondo diferente para esta sección */
+  padding: 50px 0;
+  position: relative;
+  text-align: center;
+  height: 830px;
+}
+
+.circles-what {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.circle-brown {
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #a9712e;
+  top: 15%;
+  left: 10%;
+}
+
+.circle-green {
+  position: absolute;
+  border-radius: 50%;
+  width:300px;
+  height: 300px;
+  background-color: #577d3f;
+  bottom: 10%;
+  left: 5%;
+}
+
+.circle-orange {
+  position: absolute;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  background-color: #f08525;
+  top: 20%;
+  right: 10%;
+}
+
+p {
+  margin-top: 7em;
+  margin-bottom: 1rem;
+  margin-right: 4em;
+  margin-left: 18em;
+}
+
+.title-what-we-are {
+  position: relative;
+  z-index: 2;
+}
+
+.title-what-we-are h1 {
+  font-size: 11em;
+  font-weight: bold;
+  color: #000;
+  line-height: 0;
+  margin-top: 0.8em;
+  margin-right: 2em;
+}
+
+.description-what {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: left;
+  z-index: 2;
+  position: relative;
+}
+
+.description-what .highlight-what {
+  font-weight: bold;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
   
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #d1cec9; /* Color de fondo gris claro */
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  .image-text {
-    position: relative; /* Permite que el texto se posicione relativo a este contenedor */
-    display: inline-block;
-  }
-  
-  .vinyl-image {
-    display: block;
-    width: 600px; /* Ajusta el tamaño según tus necesidades */
-    height: 600px; /* Asegúrate de mantener proporciones */
-  }
-  
-  .text-overlay {
-    position: absolute; /* Hace que el texto esté sobre la imagen */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
-    font-size: 7rem; /* Tamaño del texto */
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 10; /* Asegura que el texto esté por encima de todo */
-    white-space: nowrap; /* Evita que el texto se parta en varias líneas */
-  }
-  
-  .text-overlay .black {
-    color: #000; /* Negro para las letras D y S */
-  }
-  
-  .text-overlay .light {
-    color: #f2eaea; /* Color claro para el resto del texto */
-  }
-  
-  .arrow {
-    margin-top: 20px;
-    font-size: 3rem;
-    color: #000;
-  }
-  
+/* Sección principal de newsletter */
+#newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b5c4ed;
+  color: white;
+  width: 100%;
+  height: 60vh;
+}
+
+.h2, h2 {
+  font-size: calc(1.325rem + .9vw);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  margin-left: 2.5em;
+  padding-top: 2em;
+}
+
+.main-title {
+  font-size: 4em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  color: #fff;
+}
+
+.subscribe-button {
+  margin-top: 1.5em;
+  padding: 0.8em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Columna de redes sociales */
+.social-media {
+  background-color:#f08525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+  width: 40%;
+}
+
+.social-media .icons {
+  display: flex;
+  gap: 1.2em;
+  margin-top: 1em;
+}
+
+.social-media .icons a {
+  font-size: 2em;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-media .icons a:hover {
+  color: #000;
+}
+
+
+
+/* Estilos para el pie de página Snowfest */
+#footer-vinilos {
+  background-color:  #d1cec9;
+  color: #fff;
+  font-size: 14px;
+}
+
+.vinilos-footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 3em;
+}
+
+.vinilos-subscribe-section {
+  flex: 1 1 100%;
+  margin-bottom: 30px;
+}
+
+.vinilos-subscribe-section h2 {
+  color: #000000;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.motorlord-subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.motorlord-subscribe-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 14px;
+}
+
+.motorlord-subscribe-form button {
+  background-color: #ff8b00;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Alinear las secciones en fila */
+.motorlord-links-section {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.motorlord-footer-column {
+  flex: 1;
+}
+
+.motorlord-footer-column h3 {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.motorlord-footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.motorlord-footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.motorlord-footer-column ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.motorlord-footer-column ul li a:hover {
+  color: #ff8b00;
+}
+
+.motorlord-payment-icons, .motorlord-social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.motorlord-payment-icons i, .motorlord-social-icons i {
+  color: #fff;
+}
+
+.motorlord-payment-icons i:hover, .motorlord-icons i:hover {
+  color: #ff8b00;
+}
+
+
+
+/* Sección inferior del footer */
+.motorlord-footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 50px;
+}
+
+.motorlord-footer-bottom strong {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-brand img{
+  width: 500px;
+
+}
+.footer-brand{
+padding: 1em;
+}
+
+p {
+  margin-top: 7em;
+  margin-bottom: 1rem;
+  margin-right: 4em;
+
+}
