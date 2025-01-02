@@ -1,1 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d1cec9; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .image-text {
+    position: relative; /* Permite que el texto se posicione relativo a este contenedor */
+    display: inline-block;
+  }
+  
+  .vinyl-image {
+    display: block;
+    width: 600px; /* Ajusta el tamaño según tus necesidades */
+    height: 600px; /* Asegúrate de mantener proporciones */
+  }
+  
+  .text-overlay {
+    position: absolute; /* Hace que el texto esté sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
+    font-size: 7rem; /* Tamaño del texto */
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10; /* Asegura que el texto esté por encima de todo */
+    white-space: nowrap; /* Evita que el texto se parta en varias líneas */
+  }
+  
+  .text-overlay .black {
+    color: #000; /* Negro para las letras D y S */
+  }
+  
+  .text-overlay .light {
+    color: #f2eaea; /* Color claro para el resto del texto */
+  }
+  
+  .arrow {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #000;
+  }
+  
