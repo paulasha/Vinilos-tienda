@@ -490,7 +490,7 @@ a:link {
     font-weight: bold;
     color: var(--white);
     padding: 0.5rem;
-    width: 50rem;
+    width: 65rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -867,4 +867,380 @@ a:link {
     right: 2em;
     z-index: 900;
     transition: 0.3s;
+  }
+
+  @media screen and (max-width: 992px){
+
+    /* Index */
+    .genre {
+        width: 45rem;
+    }
+
+    /* Catalog */
+    #catalog #hiphop {
+        position: relative;
+        top: 4rem;
+        left: 8rem;
+        height: 46rem;
+    }
+
+    #catalog #hiphop {
+        height: 38rem;
+    }
+
+    .hiphoprow1 {
+        left: 4rem;
+        width: 48rem;
+    }
+
+    .hiphoprow2 {
+        left: 18rem;
+        bottom: 32.5rem;
+        width: 30rem;
+    }
+
+    .hiphoprow3 {
+        left: 32rem;
+        bottom: 66.9rem;
+        width: 15rem;
+    }
+
+    #catalog #reggae {
+        position: relative;
+        top: 4rem;
+        left: 8rem;
+        height: 46rem;
+    }
+
+    #catalog #reggae {
+        height: 38rem;
+    }
+
+    .reggaerow1 {
+        left: 4rem;
+        width: 48rem;
+    }
+
+    .reggaerow2 {
+        left: 18rem;
+        bottom: 32.5rem;
+        width: 30rem;
+    }
+
+    .reggaerow3 {
+        left: 32rem;
+        bottom: 66.9rem;
+        width: 15rem;
+    }
+
+    #catalog #rap {
+        position: relative;
+        top: 4rem;
+        left: 8rem;
+        height: 46rem;
+    }
+
+    #catalog #rap {
+        height: 38rem;
+    }
+
+    .raprow1 {
+        left: 4rem;
+        width: 48rem;
+    }
+
+    .raprow2 {
+        left: 18rem;
+        bottom: 32.5rem;
+        width: 30rem;
+    }
+
+    .raprow3 {
+        left: 32rem;
+        bottom: 66.9rem;
+        width: 15rem;
+    }
+
+    #catalog #neosoul {
+        position: relative;
+        top: 4rem;
+        left: 8rem;
+        height: 46rem;
+    }
+
+    #catalog #neosoul {
+        height: 38rem;
+    }
+
+    .neosoulrow1 {
+        left: 4rem;
+        width: 48rem;
+    }
+
+    .neosoulrow2 {
+        left: 18rem;
+        bottom: 32.5rem;
+        width: 30rem;
+    }
+
+    .neosoulrow3 {
+        left: 32rem;
+        bottom: 66.9rem;
+        width: 15rem;
+    }
+
+    #catalog #funk {
+        position: relative;
+        top: 4rem;
+        left: 8rem;
+        height: 46rem;
+    }
+
+    #catalog #funk {
+        height: 38rem;
+    }
+
+    .funkrow1 {
+        left: 4rem;
+        width: 48rem;
+    }
+
+    .funkrow2 {
+        left: 18rem;
+        bottom: 32.5rem;
+        width: 30rem;
+    }
+
+    .funkrow3 {
+        left: 32rem;
+        bottom: 66.9rem;
+        width: 15rem;
+    }
+
+    #catalog #rnb {
+        position: relative;
+        top: 4rem;
+        left: 8rem;
+        height: 46rem;
+    }
+
+    #catalog #rnb {
+        height: 38rem;
+    }
+
+    .rnbrow1 {
+        left: 4rem;
+        width: 48rem;
+    }
+
+    .rnbrow2 {
+        left: 18rem;
+        bottom: 32.5rem;
+        width: 30rem;
+    }
+
+    .rnbrow3 {
+        left: 32rem;
+        bottom: 66.9rem;
+        width: 15rem;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+
+    .losmasvendidos_titulo h2 {
+        font-size: 2.6rem;
+        bottom: 10rem;
+    }
+
+    .index_titulo h2 {
+        font-size: 2.6rem;
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .genre {
+        width: 36rem;
+    }
+
+    #catalog #hiphop {
+        height: 35rem;
+        left: 6rem;
+    }
+
+    .hiphoprow1 {
+        left: 1rem;
+        width: 40rem;
+    }
+
+    .hiphoprow2 {
+        left: 10.5rem;
+        bottom: 27.5rem;
+        width: 26rem;
+    }
+
+    #catalog #hiphop .hiphoprow2 img {
+        width: 33.9%;
+    }
+
+    .hiphoprow3 {
+        left: 20rem;
+        bottom: 56.9rem;
+        width: 13rem;
+    }
+
+    #catalog #hiphop .hiphoprow3 img {
+        width: 68%;
+    }
+
+    #catalog #reggae {
+        height: 35rem;
+        left: 6rem;
+    }
+
+    .reggaerow1 {
+        left: 1rem;
+        width: 40rem;
+    }
+
+    .reggaerow2 {
+        left: 10.5rem;
+        bottom: 27.5rem;
+        width: 26rem;
+    }
+
+    #catalog #reggae .reggaerow2 img {
+        width: 33.9%;
+    }
+
+    .reggaerow3 {
+        left: 20rem;
+        bottom: 56.9rem;
+        width: 13rem;
+    }
+
+    #catalog #reggae .reggaerow3 img {
+        width: 68%;
+    }
+
+    #catalog #rap {
+        height: 35rem;
+        left: 6rem;
+    }
+
+    .raprow1 {
+        left: 1rem;
+        width: 40rem;
+    }
+
+    .raprow2 {
+        left: 10.5rem;
+        bottom: 27.5rem;
+        width: 26rem;
+    }
+
+    #catalog #rap .raprow2 img {
+        width: 33.9%;
+    }
+
+    .raprow3 {
+        left: 20rem;
+        bottom: 56.9rem;
+        width: 13rem;
+    }
+
+    #catalog #rap .raprow3 img {
+        width: 68%;
+    }
+
+    #catalog #neosoul {
+        height: 35rem;
+        left: 6rem;
+    }
+
+    .neosoulrow1 {
+        left: 1rem;
+        width: 40rem;
+    }
+
+    .neosoulrow2 {
+        left: 10.5rem;
+        bottom: 27.5rem;
+        width: 26rem;
+    }
+
+    #catalog #neosoul .neosoulrow2 img {
+        width: 33.9%;
+    }
+
+    .neosoulrow3 {
+        left: 20rem;
+        bottom: 56.9rem;
+        width: 13rem;
+    }
+
+    #catalog #neosoul .neosoulrow3 img {
+        width: 68%;
+    }
+
+    #catalog #funk {
+        height: 35rem;
+        left: 6rem;
+    }
+
+    .funkrow1 {
+        left: 1rem;
+        width: 40rem;
+    }
+
+    .funkrow2 {
+        left: 10.5rem;
+        bottom: 27.5rem;
+        width: 26rem;
+    }
+
+    #catalog #funk .funkrow2 img {
+        width: 33.9%;
+    }
+
+    .funkrow3 {
+        left: 20rem;
+        bottom: 56.9rem;
+        width: 13rem;
+    }
+
+    #catalog #funk .funkrow3 img {
+        width: 68%;
+    }
+
+    #catalog #rnb {
+        height: 35rem;
+        left: 6rem;
+    }
+
+    .rnbrow1 {
+        left: 1rem;
+        width: 40rem;
+    }
+
+    .rnbrow2 {
+        left: 10.5rem;
+        bottom: 27.5rem;
+        width: 26rem;
+    }
+
+    #catalog #rnb .rnbrow2 img {
+        width: 33.9%;
+    }
+
+    .rnbrow3 {
+        left: 20rem;
+        bottom: 56.9rem;
+        width: 13rem;
+    }
+
+    #catalog #rnb .rnbrow3 img {
+        width: 68%;
+    }
+
   }
