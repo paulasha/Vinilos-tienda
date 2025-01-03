@@ -32,6 +32,7 @@ navbarCollapse.addEventListener('hide.bs.collapse', function () {
     menu.style.borderRadius = "900px";
 });
 
+
 // scroll indicator
 $(window).scroll(function () {
   scrollIndicator();
@@ -43,6 +44,7 @@ function scrollIndicator() {
   var scrolled = (winScroll / height) * 100;
   $("#bar").width(scrolled + "%");
 }
+
 
 // menu movil
 const menuItems = document.querySelectorAll('.navbar-nav .nav-item');
@@ -86,3 +88,27 @@ document.addEventListener('mousemove', (event) => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Locomotive Scroll
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+    });
+  
+    // Record click event to extend the section
+    const records = document.querySelectorAll('.record');
+    records.forEach((record) => {
+      record.addEventListener('click', () => {
+        // Toggle 'active' class
+        record.classList.toggle('active');
+  
+        // Ensure only one record is active at a time
+        records.forEach((otherRecord) => {
+          if (otherRecord !== record) {
+            otherRecord.classList.remove('active');
+          }
+        });
+      });
+    });
+  });
