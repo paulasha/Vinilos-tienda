@@ -475,18 +475,14 @@ a:link {
     left: 2rem;
     top: 2rem;
 }
-
+  
 [data-scroll-container] {
     overflow: hidden;
   }
-  
+
   .index-section {
     padding: 2rem 1rem 0rem 0rem;
     font-family: 'Climate Crisis';
-  }
-  
-  [data-scroll-container] {
-    overflow: hidden;
   }
 
   .genre {
