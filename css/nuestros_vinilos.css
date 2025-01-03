@@ -542,15 +542,318 @@ a:link {
     right: 1rem;
 }
 
+
+/* Hip Hop */
 #catalog #hiphop{
-    background-color: var(--light_green);
-    border-radius: 1.5rem 0rem 0rem 0rem;
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+    height: 46rem;
 }
 
-#catalog img {
-    width:31% ;
+#catalog #hiphop .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+#catalog #hiphop img {
+    margin-top: 1rem;
+}
+
+.hiphoprow1{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    width: 57rem;
+}
+
+.hiphoprow2{
+    position: relative;
+    left: 32rem;
+    bottom: 38.5rem;
+    width: 36rem;
+}
+
+.hiphoprow3{
+    position: relative;
+    left: 52rem;
+    bottom: 79.2rem;
+    width: 18rem;
+}
+
+#catalog #hiphop .hiphoprow1 img {
+    width: 22%;
+}
+
+#catalog #hiphop .hiphoprow2 img {
+    width: 35%;
+}
+
+#catalog #hiphop .hiphoprow3 img {
+    width: 70%;
+}
+
+/* Reggae */
+#catalog #reggae{
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+    height: 46rem;
+}
+
+#catalog #reggae .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#catalog #reggae img {
+    margin-top: 1rem;
+}
+
+.reggaerow1{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    width: 57rem;
+}
+
+.reggaerow2{
+    position: relative;
+    left: 32rem;
+    bottom: 38.5rem;
+    width: 36rem;
+}
+
+.reggaerow3{
+    position: relative;
+    left: 52rem;
+    bottom: 79.2rem;
+    width: 18rem;
+}
+
+#catalog #reggae .reggaerow1 img {
+    width: 22%;
+}
+
+#catalog #reggae .reggaerow2 img {
+    width: 35%;
+}
+
+#catalog #reggae .reggaerow3 img {
+    width: 70%;
+}
+
+/* Rap */
+#catalog #rap{
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+    height: 46rem;
+}
+
+#catalog #rap .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#catalog #rap img {
+    margin-top: 1rem;
+}
+
+.raprow1{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    width: 57rem;
+}
+
+.raprow2{
+    position: relative;
+    left: 32rem;
+    bottom: 38.5rem;
+    width: 36rem;
+}
+
+.raprow3{
+    position: relative;
+    left: 52rem;
+    bottom: 79.2rem;
+    width: 18rem;
+}
+
+#catalog #rap .raprow1 img {
+    width: 22%;
+}
+
+#catalog #rap .raprow2 img {
+    width: 35%;
+}
+
+#catalog #rap .raprow3 img {
+    width: 70%;
+}
+
+/* Neo Soul */
+#catalog #neosoul{
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+    height: 46rem;
+}
+
+#catalog #neosoul .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#catalog #neosoul img {
+    margin-top: 1rem;
+}
+
+.neosoulrow1{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    width: 57rem;
+}
+
+.neosoulrow2{
+    position: relative;
+    left: 32rem;
+    bottom: 38.5rem;
+    width: 36rem;
+}
+
+.neosoulrow3{
+    position: relative;
+    left: 52rem;
+    bottom: 79.2rem;
+    width: 18rem;
+}
+
+#catalog #neosoul .neosoulrow1 img {
+    width: 22%;
+}
+
+#catalog #neosoul .neosoulrow2 img {
+    width: 35%;
+}
+
+#catalog #neosoul .neosoulrow3 img {
+    width: 70%;
+}
+
+/* Funk */
+#catalog #funk{
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+    height: 46rem;
+}
+
+#catalog #funk .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#catalog #funk img {
+    margin-top: 1rem;
+}
+
+.funkrow1{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    width: 57rem;
+}
+
+.funkrow2{
+    position: relative;
+    left: 32rem;
+    bottom: 38.5rem;
+    width: 36rem;
+}
+
+.funkrow3{
+    position: relative;
+    left: 52rem;
+    bottom: 79.2rem;
+    width: 18rem;
+}
+
+#catalog #funk .funkrow1 img {
+    width: 22%;
+}
+
+#catalog #funk .funkrow2 img {
+    width: 35%;
+}
+
+#catalog #funk .funkrow3 img {
+    width: 70%;
+}
+
+/* R&B */
+#catalog #rnb{
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+    height: 46rem;
+}
+
+#catalog #rnb .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#catalog #rnb img {
+    margin-top: 1rem;
+}
+
+.rnbrow1{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    width: 57rem;
+}
+
+.rnbrow2{
+    position: relative;
+    left: 32rem;
+    bottom: 38.5rem;
+    width: 36rem;
+}
+
+.rnbrow3{
+    position: relative;
+    left: 52rem;
+    bottom: 79.2rem;
+    width: 18rem;
+}
+
+#catalog #rnb .rnbrow1 img {
+    width: 22%;
+}
+
+#catalog #rnb .rnbrow2 img {
+    width: 35%;
+}
+
+#catalog #rnb .rnbrow3 img {
+    width: 70%;
+}
 
 
 /* flecha subir */
