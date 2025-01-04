@@ -26,37 +26,54 @@
     
 </head>
 <body>
+   
     <main data-scroll-container>
-        <!-- Navbar -->
+       
+         
       
         
-        <!-- Main Content -->
-        <section  id="content" data-scroll-container>
-            <div class="marquee">
-                <span>DA-RECORDS</span>
-                <span>DA-RECORDS</span>
-                
-            </div>
-            <div class="vinyl" data-scroll-container>
-               
-                    <model-viewer data-scroll-container  disable-zoom auto-rotate src="assets/models/Vinilo_Test.gltf" shadow-intensity="0" camera-controls touch-action="pan-y"></model-viewer>
+       
+        <section data-scroll-section id="content">
             
-             
-            </div>
-              <!-- Aquí se insertará el modelo 3D -->
-              <button id="playSong" class="btn btn-primary">Play</button>
-              <!-- Contenedor del ecualizador -->
-              <div class="equalizer" id="equalizer" style="display: none;">
-                  <div class="equalizer_bar"></div>
-                  <div class="equalizer_bar"></div>
-                  <div class="equalizer_bar"></div>
-                  <div class="equalizer_bar"></div>
-                  <div class="equalizer_bar"></div>
-                  <div class="equalizer_bar"></div>
-              </div>
             <div>
+                <h1>DA-RECORDS</h1>
+            </div>
 
-                <div class="menu-item" data-scroll-speed= "2" id="eventos" >Próximos eventos</div>
+          
+            <div class="vinyl" class="demo"><span style="position: absolute; font-size: 14em;
+            top: 25%; font-weight: bold;
+                color: #000;
+                opacity: 0.1;
+                text-transform: uppercase;
+                white-space: nowrap;
+                animation: scroll 17s linear infinite;">DA-RECORDS DA-RECORDS</span>
+            <model-viewer  disable-zoom auto-rotate  src="assets/models/Vinilo_test_2.gltf" shadow-intensity="0" camera-controls touch-action="pan-y" style="background-color: unset;" ></model-viewer>
+
+            </div>
+
+            <div class="play">
+                <!-- Botón de Play -->
+                <i  id="play-btn" class="fa-solid fa-play"></i>
+                <!-- Botón de Pause -->
+                <i  id="pause-btn" class="fa-solid fa-pause" style="cursor: pointer; ; display: none;"class="fa-solid fa-pause"></i>
+            </div>
+              
+            <!-- Contenedor del ecualizador -->
+            <div class="equalizer" id="equalizer" style="display: none;">
+                <div class="equalizer_bar"></div>
+                <div class="equalizer_bar"></div>
+                <div class="equalizer_bar"></div>
+                <div class="equalizer_bar"></div>
+                <div class="equalizer_bar"></div>
+            </div>
+              
+              <!-- Audio -->
+              <audio id="music" src="music/trill.mp3"></audio>
+
+
+            <div data-scroll-section>
+
+                <div class="menu-item" data-scroll  data-scroll-speed= "2" id="eventos" >Próximos eventos</div>
                 <div class="menu-item"  data-scroll data-scroll-speed="2" id="sobre-nosotros">Sobre nosotros</div>
                 <div class="menu-item"  data-scroll data-scroll-speed="3" id="vinilos">Nuestros vinilos</div>
                 <div class="menu-item"   data-scroll data-scroll-speed="3" id="cafeteria">Cafetería</div>
@@ -65,12 +82,9 @@
         </section>
 
 
-        <section id="music-section">
+        <section id="music-section" style="background-color: #739c4a">
             <div class="vinyl-player">
-                <div>
-                    <model-viewer src="assets/models/Vinilo_Test.gltf" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="45deg 55deg 4m"></model-viewer>
-            
-                </div>
+              <img id="vinyl" src="path/to/vinyl-image.png" alt="Vinyl" />
               <h2 id="genre-text">HIP HOP</h2>
               <div id="equalizer">
                 <span></span><span></span><span></span><span></span><span></span>
@@ -89,7 +103,7 @@
               </div>
               <button id="next" class="arrow-btn">→</button>
             </div>
-        </section>
+          </section>
 
       
 
