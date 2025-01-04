@@ -1244,3 +1244,198 @@ a:link {
     }
 
   }
+
+  @media screen and (max-width: 414px){
+    .losmasvendidos_titulo h2 {
+        bottom: 13rem;
+        left: 1rem;
+        right: 0rem;
+    }
+
+    .genre {
+        width: 23rem;
+    }
+    .catalog_titulo h2 {
+        font-size: 2.6rem;
+    }
+
+    #catalog #hiphop {
+        height: 28rem;
+        left: 0rem;
+    }
+
+    .hiphoprow1 {
+        left: 1rem;
+        width: 34rem;
+    }
+
+    #catalog #hiphop .hiphoprow1 img {
+        width: 18%;
+    }
+
+    .hiphoprow2 {
+        left: 8rem;
+        bottom: 19.32rem;
+        width: 22rem;
+    }
+
+    #catalog #hiphop .hiphoprow2 img {
+        width: 27.7%;
+    }
+
+    .hiphoprow3 {
+        left: 15rem;
+        bottom: 40.55rem;
+        width: 9rem;
+    }
+
+    #catalog #reggae {
+        height: 28rem;
+        left: 0rem;
+    }
+
+    .reggaerow1 {
+        left: 1rem;
+        width: 34rem;
+    }
+
+    #catalog #reggae .reggaerow1 img {
+        width: 18%;
+    }
+
+    .reggaerow2 {
+        left: 8rem;
+        bottom: 19.32rem;
+        width: 22rem;
+    }
+
+    #catalog #reggae .reggaerow2 img {
+        width: 27.7%;
+    }
+
+    .reggaerow3 {
+        left: 15rem;
+        bottom: 40.55rem;
+        width: 9rem;
+    }
+
+    #catalog #rap {
+        height: 28rem;
+        left: 0rem;
+    }
+
+    .raprow1 {
+        left: 1rem;
+        width: 34rem;
+    }
+
+    #catalog #rap .raprow1 img {
+        width: 18%;
+    }
+
+    .raprow2 {
+        left: 8rem;
+        bottom: 19.32rem;
+        width: 22rem;
+    }
+
+    #catalog #rap .raprow2 img {
+        width: 27.7%;
+    }
+
+    .raprow3 {
+        left: 15rem;
+        bottom: 40.55rem;
+        width: 9rem;
+    }
+
+    #catalog #neosoul {
+        height: 28rem;
+        left: 0rem;
+    }
+
+    .neosoulrow1 {
+        left: 1rem;
+        width: 34rem;
+    }
+
+    #catalog #neosoul .neosoulrow1 img {
+        width: 18%;
+    }
+
+    .neosoulrow2 {
+        left: 8rem;
+        bottom: 19.32rem;
+        width: 22rem;
+    }
+
+    #catalog #neosoul .neosoulrow2 img {
+        width: 27.7%;
+    }
+
+    .neosoulrow3 {
+        left: 15rem;
+        bottom: 40.55rem;
+        width: 9rem;
+    }
+
+    #catalog #funk {
+        height: 28rem;
+        left: 0rem;
+    }
+
+    .funkrow1 {
+        left: 1rem;
+        width: 34rem;
+    }
+
+    #catalog #funk .funkrow1 img {
+        width: 18%;
+    }
+
+    .funkrow2 {
+        left: 8rem;
+        bottom: 19.32rem;
+        width: 22rem;
+    }
+
+    #catalog #funk .funkrow2 img {
+        width: 27.7%;
+    }
+
+    .funkrow3 {
+        left: 15rem;
+        bottom: 40.55rem;
+        width: 9rem;
+    }
+
+    #catalog #rnb {
+        height: 28rem;
+        left: 0rem;
+    }
+
+    .rnbrow1 {
+        left: 1rem;
+        width: 34rem;
+    }
+
+    #catalog #rnb .rnbrow1 img {
+        width: 18%;
+    }
+
+    .rnbrow2 {
+        left: 8rem;
+        bottom: 19.32rem;
+        width: 22rem;
+    }
+
+    #catalog #rnb .rnbrow2 img {
+        width: 27.7%;
+    }
+
+    .rnbrow3 {
+        left: 15rem;
+        bottom: 40.55rem;
+        width: 9rem;
+    }
+  }
