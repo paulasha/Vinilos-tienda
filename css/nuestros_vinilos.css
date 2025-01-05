@@ -15,7 +15,6 @@ body{
     --white: #fcfcfc;
     --dark_grey: #303023;
     --grey: #D3CECE;
-    --white: #fcfcfc;
     --turquoise: #256063;
     --light_green: #698D1C;
     --dark_green: #445916;
@@ -86,6 +85,21 @@ body{
 }
 
 /* menu */
+
+#logo-menu img{
+    width: 50px;
+    height: 50px;
+    animation: spin 10s linear infinite;
+} 
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 #menu{
     transition-duration: 0.3s;
@@ -549,6 +563,7 @@ a:link {
     top: 4rem;
     left: 7rem;
     height: 46rem;
+    margin-right: 7rem;
 }
 
 #catalog #hiphop .row{
@@ -601,6 +616,7 @@ a:link {
     top: 4rem;
     left: 7rem;
     height: 46rem;
+    margin-right: 7rem;
 }
 
 #catalog #reggae .row{
@@ -653,6 +669,7 @@ a:link {
     top: 4rem;
     left: 7rem;
     height: 46rem;
+    margin-right: 7rem;
 }
 
 #catalog #rap .row{
@@ -705,6 +722,7 @@ a:link {
     top: 4rem;
     left: 7rem;
     height: 46rem;
+    margin-right: 7rem;
 }
 
 #catalog #neosoul .row{
@@ -757,6 +775,7 @@ a:link {
     top: 4rem;
     left: 7rem;
     height: 46rem;
+    margin-right: 7rem;
 }
 
 #catalog #funk .row{
@@ -809,6 +828,7 @@ a:link {
     top: 4rem;
     left: 7rem;
     height: 46rem;
+    margin-right: 7rem;
 }
 
 #catalog #rnb .row{
@@ -1253,8 +1273,14 @@ a:link {
     }
 
     .genre {
-        width: 23rem;
+        width: 17rem;
+        font-size: 1.15rem;
     }
+
+    .record img {
+        width: 43%;
+    }
+
     .catalog_titulo h2 {
         font-size: 2.6rem;
     }
