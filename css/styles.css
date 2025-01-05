@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins';
     margin: 0;
     line-height: 1.6;
+    scroll-behavior: smooth;
     
   }
   
- #content{
+ #content-3D{
    
     overflow-x: hidden;
     height: 100vh;
@@ -16,14 +17,12 @@ body {
     align-items: center;
     flex-direction: column;
   }
- #content > div > h1{
+ #content-3D > div > h1{
    color: #000;
    font-size: 1em;
    font-weight: bold;
   }
- #content > div:first-child {
-    padding-bottom: 40em;
-  }
+
   .vinyl {
     position: absolute;
     width: 100vw;
@@ -32,21 +31,36 @@ body {
     background: linear-gradient(#ffffff94,   #cfbbb2); 
     overflow-x: hidden;
   }
+  .vinyl-music {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: linear-gradient(#ffffff4f,  #ffffff94, #ffffff2c); 
+    overflow-x: hidden;
+  }
 
   .play{
+    padding-top: 8em;
     z-index: 4;
-    font-size: 3em;
+    font-size: 4em;
   }
   .fa-play, .fa-pause{
-   color:#0000009d;
-   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.457); /* Ajusta los valores según tus necesidades */
+   color:#ffffff;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ajusta los valores según tus necesidades */
+}
+
+.fa-play:hover{
+  color: #000;
 }
 
 
 
 
  
- 
+.circle[data-color] {
+    background-color: var(--circle-color, #fff);
+  }
 
 
 
@@ -82,13 +96,19 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease; /* Transición suave */
+
+  }
+  .menu-item a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Usa el color del elemento padre */
+
   }
   
   .menu-item:hover {
     background-color: black; /* Fondo negro al hacer hover */
     color: white; /* Texto blanco al hacer hover */
   }
-  #eventos { top: 20%; left: 5%; }
+  #blog{ top: 20%; left: 5%; }
   #sobre-nosotros { top: 20%; right: 5%; }
   #vinilos { bottom: 20%; left: 5%; }
   #cafeteria { bottom: 20%; right: 5%; }
@@ -103,9 +123,9 @@ body {
   }
   
   .equalizer_bar {
-    width: 5px;
-    height: 20px;
-    background-color: #858585;
+    width: 20px;
+    height: 60px;
+    background-color: #ffffff;
     animation: bounce 0.5s infinite ease-in-out;
   }
   
@@ -138,46 +158,58 @@ body {
  
 
 
-
   #music-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     height: 100vh;
     color: white;
     transition: background-color 0.5s ease;
-  }
+}
   
-  .vinyl-player {
+  
+  
+
+.vinyl-player {
     position: relative;
     margin-bottom: 20px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
   
   #vinyl {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     animation: spin 10s linear infinite;
   }
   
   #genre-text {
-    font-size: 2em;
+    font-size: 10em;
     font-weight: bold;
-    margin-top: 10px;
+   
+    color: #ffffff;
+  }
+  #music-section > div:first-child{
+    z-index: 3;
   }
   
   #equalizer {
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-top: 10px;
+   padding: 2em;
+
   }
   
   #equalizer span {
     width: 5px;
     height: 15px;
-    background: white;
+    background: rgb(0, 0, 0);
     animation: bounce 1s infinite ease-in-out;
   }
   
@@ -190,10 +222,13 @@ body {
   }
   
   .controls {
+   
+    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
   }
   
   .arrow-btn {
@@ -210,11 +245,20 @@ body {
   }
   
   .circle {
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra negra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el tamaño y la sombra */
+  
+  
   }
+
+.circle:hover {
+  transform: scale(1.2); /* Crece un 20% al hacer hover */
+  box-shadow: 0px 8px 16pxrgba(0, 0, 0, 0.2); /* Sombra más grande al hacer hover */
+}
   
   .circle[data-color] {
     background-color: var(--circle-color, #fff);
@@ -242,4 +286,31 @@ body {
     width: 100%;
     height: 100%;
 }
+ 
+
+.scroll-arrow {
+    margin-top: 2em; /* Espaciado */
+    color: #000; /* Color inicial */
+    font-size: 2em; /* Tamaño de la flecha */
+    animation: bounce-arrow 2s infinite; /* Animación de rebote */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+@keyframes bounce-arrow {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.scroll-arrow:hover {
+    color: #ffffff; /* Cambia el color al pasar el ratón */
+}
   
+
+

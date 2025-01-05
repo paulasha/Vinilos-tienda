@@ -1,10 +1,4 @@
 
-  // Locomotive Scroll Initialization
-  //const scroll = new LocomotiveScroll({
-    //el: document.querySelector('[data-scroll-container]'),
-   // smooth: true
-  //});
-
   
   document.addEventListener('DOMContentLoaded', () => {
   const playBtn = document.getElementById('play-btn');
@@ -37,27 +31,6 @@
 });
 
 
-
- 
-
-  const colorCircles = document.querySelectorAll('.color-circle');
-  const carouselSection = document.getElementById('carousel-section');
-  const audio = new Audio();
-
-  colorCircles.forEach(circle => {
-    circle.addEventListener('click', () => {
-      // Cambiar color de fondo
-      const color = circle.getAttribute('data-color');
-      carouselSection.style.backgroundColor = color;
-
-      // Cambiar música
-      const music = circle.getAttribute('data-music');
-      audio.src = music;
-      audio.play();
-    });
-  });
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const circles = document.querySelectorAll(".circle");
   const musicSection = document.getElementById("music-section");
@@ -78,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       genreText.textContent = newGenre;
 
       // Cambia la canción
-      audio.src = `path/to/songs/${newSong}`;
+      audio.src = `music/${newSong}`;
       audio.play();
     });
   });
@@ -100,3 +73,25 @@ document.addEventListener("DOMContentLoaded", () => {
     circles[nextIndex].click();
   });
 });
+
+
+const modelViewerColor = document.querySelector("model-viewer#color");
+
+document.querySelector('#color-controls').addEventListener('click', (event) => {
+  const colorString = event.target.dataset.color;
+  const [material] = modelViewerColor.model.materials;
+  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+});
+document.querySelectorAll('.circle').forEach(circle => {
+    const color = circle.getAttribute('data-color'); // Leer el atributo data-color
+    circle.style.backgroundColor = color; // Aplicar el color al fondo del círculo
+  });
+
+  
+
+  
+
+ 
+
+
+  

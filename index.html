@@ -27,38 +27,33 @@
 </head>
 <body>
    
-    <main data-scroll-container>
+    <main >
        
          
       
         
        
-        <section data-scroll-section id="content">
+        <section  id="content-3D">
             
-            <div>
-                <h1>DA-RECORDS</h1>
-            </div>
+            
 
           
-            <div class="vinyl" class="demo"><span style="position: absolute; font-size: 14em;
-            top: 25%; font-weight: bold;
-                color: #000;
-                opacity: 0.1;
-                text-transform: uppercase;
-                white-space: nowrap;
-                animation: scroll 17s linear infinite;">DA-RECORDS DA-RECORDS</span>
-            <model-viewer  disable-zoom auto-rotate  src="assets/models/Vinilo_test_2.gltf" shadow-intensity="0" camera-controls touch-action="pan-y" style="background-color: unset;" ></model-viewer>
+            <div class="vinyl" class="demo">
+               
+                <span style="position: absolute; text-align: center; font-size: 1em;font-weight: bold; line-height: 100px; left: 50%; transform: translateX(-50%);color: #00000084;"><img id="vinyl"src="media/img/Da Records Logo.png" alt="Vinyl" /></span><span style="position: absolute; font-size: 14em; top: 25%; font-weight: bold; color: #000; opacity: 1;text-transform: uppercase; white-space: nowrap;animation: scroll 17s linear infinite;">DA-RECORDS DA-RECORDS</span>
+                <model-viewer  disable-zoom auto-rotate  src="assets/models/Vinilo_test_2.gltf" shadow-intensity="0.1" camera-controls touch-action="pan-y" style="background-color: unset;" ></model-viewer>
+
+              
 
             </div>
-
             <div class="play">
                 <!-- Botón de Play -->
                 <i  id="play-btn" class="fa-solid fa-play"></i>
                 <!-- Botón de Pause -->
                 <i  id="pause-btn" class="fa-solid fa-pause" style="cursor: pointer; ; display: none;"class="fa-solid fa-pause"></i>
             </div>
-              
-            <!-- Contenedor del ecualizador -->
+
+                <!-- Contenedor del ecualizador -->
             <div class="equalizer" id="equalizer" style="display: none;">
                 <div class="equalizer_bar"></div>
                 <div class="equalizer_bar"></div>
@@ -66,43 +61,70 @@
                 <div class="equalizer_bar"></div>
                 <div class="equalizer_bar"></div>
             </div>
+            
+            <!-- Audio -->
+            <audio id="music" src="music/Selfless.mp3"></audio>
+            
+            <a href="#music-section" class="scroll-arrow d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+           
               
-              <!-- Audio -->
-              <audio id="music" src="music/trill.mp3"></audio>
+           
 
 
-            <div data-scroll-section>
+            <div >
 
-                <div class="menu-item" data-scroll  data-scroll-speed= "2" id="eventos" >Próximos eventos</div>
-                <div class="menu-item"  data-scroll data-scroll-speed="2" id="sobre-nosotros">Sobre nosotros</div>
-                <div class="menu-item"  data-scroll data-scroll-speed="3" id="vinilos">Nuestros vinilos</div>
-                <div class="menu-item"   data-scroll data-scroll-speed="3" id="cafeteria">Cafetería</div>
+                <div class="menu-item"  id="blog" ><a href="">Blog</a></div>
+                <div class="menu-item" id="sobre-nosotros"><a href="">Sobre nosotros</a></div>
+                <div class="menu-item"  id="vinilos"><a href="nuestros_vinilos.html">Nuestros vinilos</a></div>
+                <div class="menu-item" id="cafeteria"><a href="cafeteria.html">Cafetería</a></div>
             </div>
         
         </section>
 
 
-        <section id="music-section" style="background-color: #739c4a">
+        <section id="music-section" style="background-color:  #ffffff94;">
+            <div>
+                <h2 id="genre-text">HIP HOP</h2>
+                
+
+            </div>
+            
+            <div class="vinyl-music" >
+                <model-viewer id="color" disable-zoom auto-rotate interaction-prompt="none" src="assets/models/Vinilo_test_2.gltf" shadow-intensity="0" camera-controls touch-action="pan-y" style="background-color: unset;" >
+            
+                </model-viewer>
+                
+               
+    
+            </div>
             <div class="vinyl-player">
-              <img id="vinyl" src="path/to/vinyl-image.png" alt="Vinyl" />
-              <h2 id="genre-text">HIP HOP</h2>
-              <div id="equalizer">
-                <span></span><span></span><span></span><span></span><span></span>
-              </div>
+               
+             
+              
+                  <div class="controls" id="color-controls"> 
+                    <div class="circle" data-color="rgba(105, 141, 28, 1)" data-genre="HIP HOP" data-song="Hiphop.mp3"></div>
+                    <div class="circle" data-color="rgba(68, 89, 22, 1)" data-genre="REGGAE" data-song="Reggae.mp3"></div>
+                    <div class="circle" data-color="rgba(180, 123, 38, 1)" data-genre="RAP" data-song="Rap.mp3"></div>
+                    <div class="circle" data-color="rgba(232, 83, 51, 1)" data-genre="NEO SOUL" data-song="back-to-black.mp3"></div>
+                    <div class="circle" data-color="rgba(255, 141, 0, 1)" data-genre="FUNK" data-song="Funk.mp3"></div>
+                    <div class="circle" data-color="rgba(249, 202, 30, 1)" data-genre="R&B" data-song="Sundays.mp3"></div>
+                  </div>
+
+                
+                  <div id="equalizer">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  
+                  
+                 
+
+              
             </div>
           
-            <div class="controls">
-              <button id="prev" class="arrow-btn">←</button>
-              <div class="color-circles">
-                <div class="circle" data-color="#739c4a" data-genre="HIP HOP" data-song="hiphop.mp3"></div>
-                <div class="circle" data-color="#4d592e" data-genre="REGGAE" data-song="reggae.mp3"></div>
-                <div class="circle" data-color="#b8781f" data-genre="RAP" data-song="rap.mp3"></div>
-                <div class="circle" data-color="#d2603e" data-genre="NEO SOUL" data-song="neosoul.mp3"></div>
-                <div class="circle" data-color="#f68c20" data-genre="FUNK" data-song="funk.mp3"></div>
-                <div class="circle" data-color="#f4c63e" data-genre="R&B" data-song="rnb.mp3"></div>
-              </div>
-              <button id="next" class="arrow-btn">→</button>
-            </div>
+           
           </section>
 
       
