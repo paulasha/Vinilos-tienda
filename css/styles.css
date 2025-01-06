@@ -191,7 +191,7 @@ body {
   #genre-text {
     font-size: 10em;
     font-weight: bold;
-   
+    padding-top: 1em;
     color: #ffffff;
   }
   #music-section > div:first-child{
@@ -314,3 +314,15 @@ body {
   
 
 
+
+
+@media only screen and (max-width: 600px) {
+#genre-text {
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 1em;
+}
+
+
+}
