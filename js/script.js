@@ -115,16 +115,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ----------------------------------
-
-
 // circle movement
 document.addEventListener('mousemove', (event) => {
   const mouseX = event.clientX;
   const mouseY = event.clientY;
 
   // Select all the image elements
-  const images = document.querySelectorAll('.artistas img');
+  const images = document.querySelectorAll('.black-section img');
 
   images.forEach((img) => {
       const rect = img.getBoundingClientRect();
@@ -149,6 +146,74 @@ document.addEventListener('mousemove', (event) => {
       }
   });
 });
+
+
+// Carousel Logic
+const carousels = document.querySelectorAll(".image-carousel");
+
+carousels.forEach((carousel) => {
+  const imagesContainer = carousel.querySelector(".carousel-images");
+  const images = imagesContainer.querySelectorAll("img");
+  const leftArrow = carousel.querySelector(".left-arrow");
+  const rightArrow = carousel.querySelector(".right-arrow");
+
+  let currentIndex = 0;
+  const totalImages = images.length;
+
+  const updateCarousel = () => {
+    const offset = -currentIndex * 100; // Each image takes 100% of the container's width
+    imagesContainer.style.transform = `translateX(${offset}%)`;
+  };
+
+  const moveNext = () => {
+    currentIndex = (currentIndex + 1) % totalImages; // Wrap around to the first image
+    updateCarousel();
+  };
+
+  const movePrevious = () => {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Wrap around to the last image
+    updateCarousel();
+  };
+
+  let autoSlideInterval = setInterval(moveNext, 6000); // Auto-slide every 5 seconds
+
+  // Arrow click events
+  leftArrow.addEventListener("click", () => {
+    movePrevious();
+    resetAutoSlide();
+  });
+
+  rightArrow.addEventListener("click", () => {
+    moveNext();
+    resetAutoSlide();
+  });
+
+  // Mouse slide functionality
+  let startX = 0;
+  let isDragging = false;
+
+  imagesContainer.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.clientX;
+  });
+
+  imagesContainer.addEventListener("mouseup", (e) => {
+    isDragging = false;
+    const diff = e.clientX - startX;
+    if (diff > 50) movePrevious(); // Slide right
+    if (diff < -50) moveNext(); // Slide left
+    resetAutoSlide();
+  });
+
+  // Reset auto-slide timer
+  const resetAutoSlide = () => {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(moveNext, 6000);
+  };
+});
+
+// ----------------------------------
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Locomotive Scroll

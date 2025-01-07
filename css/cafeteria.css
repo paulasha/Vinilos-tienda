@@ -116,7 +116,7 @@ p{
 }
 .navbar{
     width: 100%;
-    z-index: 999;
+    z-index: 7;
 }
 
 .navbar-brand img{
@@ -252,20 +252,10 @@ a:link {
   }
 
 
-/*   #intro p{
-    position: relative;
-    top: 15rem;
-    left: 5rem;
-    font-size: 1.25rem;
-    font-family: 'Poppins';
-    width: 25rem;
-  } */
-
-
 .introtext{
     position: relative;
     left: 7rem;
-    top: 7rem;
+    top: 4rem;
     width: 17rem;
     font-size: 1.2rem;
 }
@@ -309,13 +299,13 @@ a:link {
     left: 0rem;
     bottom: 2rem;
     width: 100%;
-    height: 64rem;
+    height: 126.75rem;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 3rem;
-    z-index: 9999;
+    z-index: 6;
   }
   
   .expanded-square.active {
@@ -333,31 +323,207 @@ a:link {
     bottom: 1rem;
   }
   
-  .text-section {
+/* .text-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 0.75rem;
     color: var(--white);
-  }
+    flex-direction: column;
+  } */
+
+  .text-section {
+    color: var(--white);
+    width: 34rem;
+    position: relative;
+    left: 21rem;
+    top: 4rem;
+}
   
   .text-section p {
-    font-size: 1.65rem;
+    font-size: 0.85rem;
     font-family: 'Poppins';
+}
+
+.text-section p .menu-title{
+    font-size: 2rem;
 }
 
 .black-section {
     background-color: black;
     width: 81rem;
     height: 42rem;
-    margin-bottom: 2rem;
     position: relative;
     right: 3rem;
-    top: 32rem;
+    top: 12rem;
   }
 
+.black-section img{
+    border-radius: 50%;
+    position: relative;
+}
+
+.black-section-title{
+    font-size: 2.2rem;
+    color: var(--grey);
+    width: 33rem;
+    font-family: "Climate Crisis", cursive;
+    position: relative;
+    left: 53rem;
+    top: 5rem;
+}
+
+.big_poppa{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.big_poppa_img{
+    height: 20vh;
+    width: 20vh;
+    right: 17rem;
+    top: 8rem;
+}
+
+.bustarhymes{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.bustarhymes_img{
+    height: 30vh;
+    width: 30vh;
+    right: 27rem;
+    top: 18rem;
+}
+
+.cent{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.cent_img{
+    height: 28vh;
+    width: 28vh;
+    left: 30rem;
+    top: 8rem;
+}
+
+.puffdaddy{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.puffdaddy_img{
+    height: 20vh;
+    width: 20vh;
+    left: 18rem;
+    top: 23rem;
+}
+
+.a_tribe_called_quest{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.a_tribe_called_quest_img{
+    height: 35vh;
+    width: 35vh;
+    left: 1rem;
+    top: 12rem;
+}
+
+.circle-genre-1{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--light_green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 24rem;
+    top: 24rem;
+}
+
+.circle-genre-2{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--light_green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 53rem;
+    top: 4rem;
+}
 
 /* terraza */
+
+.image-carousel {
+    position: relative;
+    width: 62rem;
+    height: 29rem;
+    overflow: hidden;
+    top: 11rem;
+    left: 6rem;
+  }
+
+.image-carousel-title{
+    font-size: 2.2rem;
+    color: var(--grey);
+    width: 33rem;
+    font-family: "Climate Crisis", cursive;
+    position: relative;
+    left: 8rem;
+    top: 16rem;
+    z-index: 7;
+}
+  
+  .carousel-wrapper {
+    width: 100%;
+    height: 150%;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(0 0 0 / 0%);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.5rem;
+  }
+  
+  .carousel-arrow.left-arrow {
+    left: 1rem;
+  }
+  
+  .carousel-arrow.right-arrow {
+    right: 1rem;
+  }
 
 
 /* flecha subir */
