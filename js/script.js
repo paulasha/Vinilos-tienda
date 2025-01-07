@@ -56,6 +56,15 @@ item.addEventListener('click', () => {
 });
 });
 
+// marquee
+document.addEventListener("DOMContentLoaded", () => {
+  const marquee = document.getElementById("marquee-title");
+
+  // Optional: Adjust speed dynamically based on content length
+  const textLength = marquee.innerText.length;
+  const speed = Math.max(10, textLength / 2); // Longer text scrolls slower
+  marquee.style.animationDuration = `${speed}s`;
+});
 
 // circle movement
 document.addEventListener('mousemove', (event) => {

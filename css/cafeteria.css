@@ -180,3 +180,54 @@ a:link {
     border-radius: 90px;
     margin-top: 1rem;
 }
+
+/* into */
+
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: var(--grey); /* Light gray background for contrast */
+    border: 1px solid var(--grey); /* Border similar to Bootstrap's card styles */
+    padding: 10px 0;
+  }
+  
+  /* Styling for the marquee text */
+  .marquee {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-family: Climate-crisis;
+    animation: scroll-left 10s linear infinite;
+    color: var(--dark_grey); /* Dark gray text color */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+/* menus */
+
+
+/* terraza */
+
+
+/* flecha subir */
+#flecha{
+    width: 48px;
+    border-radius: 900px;
+    background-color: var(--turquoise);
+    box-shadow: 0px 18px 38px -16px var(--black);
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    z-index: 900;
+    transition: 0.3s;
+  }
+
