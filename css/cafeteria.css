@@ -309,8 +309,7 @@ a:link {
     left: 0rem;
     bottom: 2rem;
     width: 100%;
-    height: 35rem;
-    background-color: var(--light_green);
+    height: 64rem;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
@@ -346,6 +345,17 @@ a:link {
     font-size: 1.65rem;
     font-family: 'Poppins';
 }
+
+.black-section {
+    background-color: black;
+    width: 81rem;
+    height: 42rem;
+    margin-bottom: 2rem;
+    position: relative;
+    right: 3rem;
+    top: 32rem;
+  }
+
 
 /* terraza */
 

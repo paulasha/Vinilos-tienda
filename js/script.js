@@ -90,30 +90,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
  document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".square");
-  const expandedSquare = document.querySelector(".expanded-square");
-  const closeBtn = document.querySelector(".close-btn");
+  const expandedSquares = document.querySelectorAll(".expanded-square");
+  const closeButtons = document.querySelectorAll(".close-btn");
 
-  // Show the expanded view
+  // Show the corresponding expanded view
   squares.forEach((square) => {
     square.addEventListener("click", () => {
-      const content = square.dataset.content;
+      const id = square.dataset.id;
+      const expandedSquare = document.getElementById(`expanded-${id}`);
 
+      // Hide all other expanded squares first
+      expandedSquares.forEach((exp) => exp.classList.remove("active"));
+
+      // Show the correct expanded square
       expandedSquare.classList.add("active");
-      const textSection = expandedSquare.querySelector(".text-section");
-
-      // Fill content dynamically (replace placeholder text)
-      textSection.innerHTML = "";
-      for (let i = 1; i <= 9; i++) {
-        const p = document.createElement("p");
-        p.textContent = `${content} - Text ${i}`;
-        textSection.appendChild(p);
-      }
     });
   });
 
   // Close the expanded view
-  closeBtn.addEventListener("click", () => {
-    expandedSquare.classList.remove("active");
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      expandedSquares.forEach((exp) => exp.classList.remove("active"));
+    });
   });
 });
 
