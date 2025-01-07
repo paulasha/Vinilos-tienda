@@ -66,6 +66,60 @@ document.addEventListener("DOMContentLoaded", () => {
   marquee.style.animationDuration = `${speed}s`;
 });
 
+
+ // Scroll text animation using Intersection Observer
+ const scrollText = document.getElementById("scroll-text");
+  
+ const observer = new IntersectionObserver(
+   (entries) => {
+     entries.forEach((entry) => {
+       if (entry.isIntersecting) {
+         scrollText.classList.add("in-view");
+         scrollText.classList.remove("out-of-view");
+       } else {
+         scrollText.classList.remove("in-view");
+         scrollText.classList.add("out-of-view");
+       }
+     });
+   },
+   { threshold: 0.5 } // Trigger when 50% of the element is in view
+ );
+
+ observer.observe(scrollText);
+
+
+ document.addEventListener("DOMContentLoaded", () => {
+  const squares = document.querySelectorAll(".square");
+  const expandedSquare = document.querySelector(".expanded-square");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Show the expanded view
+  squares.forEach((square) => {
+    square.addEventListener("click", () => {
+      const content = square.dataset.content;
+
+      expandedSquare.classList.add("active");
+      const textSection = expandedSquare.querySelector(".text-section");
+
+      // Fill content dynamically (replace placeholder text)
+      textSection.innerHTML = "";
+      for (let i = 1; i <= 9; i++) {
+        const p = document.createElement("p");
+        p.textContent = `${content} - Text ${i}`;
+        textSection.appendChild(p);
+      }
+    });
+  });
+
+  // Close the expanded view
+  closeBtn.addEventListener("click", () => {
+    expandedSquare.classList.remove("active");
+  });
+});
+
+// ----------------------------------
+
+
 // circle movement
 document.addEventListener('mousemove', (event) => {
   const mouseX = event.clientX;

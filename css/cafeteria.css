@@ -183,24 +183,27 @@ a:link {
 
 /* into */
 
+#intro .container.my-5{
+    position: relative;
+    top: 2rem;
+    height: 5rem;
+}
+
 .marquee-container {
     position: relative;
-    overflow: hidden;
     white-space: nowrap;
-    width: 100%;
-    background-color: var(--grey); /* Light gray background for contrast */
-    border: 1px solid var(--grey); /* Border similar to Bootstrap's card styles */
-    padding: 10px 0;
-  }
+    width: 90rem;
+    height: 9rem;
+}
   
   /* Styling for the marquee text */
   .marquee {
     position: absolute;
     white-space: nowrap;
-    font-size: 1.5rem; /* Adjust font size as needed */
-    font-family: Climate-crisis;
+    font-size: 6.5rem;
     animation: scroll-left 10s linear infinite;
-    color: var(--dark_grey); /* Dark gray text color */
+    color: var(--dark_grey);
+    font-family: "Climate Crisis", cursive;
   }
   
   @keyframes scroll-left {
@@ -212,8 +215,126 @@ a:link {
     }
   }
 
+
+
+/* Styling for the scroll text */
+.scroll-text-container {
+    position: relative;
+    height: 200px; /* Adjust based on the space you need */
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  
+  .scroll-text {
+    position: absolute;
+    left: -100%; /* Start off-screen */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    opacity: 0; /* Invisible initially */
+  }
+  
+  /* When text is in view */
+  .scroll-text.in-view {
+    transform: translateX(50%); /* Move to the center of the screen */
+    opacity: 1; /* Fully visible */
+  }
+  
+  /* When text is out of view */
+  .scroll-text.out-of-view {
+    transform: translateX(-100%); /* Moves back to the left */
+    opacity: 0; /* Fully invisible */
+  }
+
+
+/*   #intro p{
+    position: relative;
+    top: 15rem;
+    left: 5rem;
+    font-size: 1.25rem;
+    font-family: 'Poppins';
+    width: 25rem;
+  } */
+
+
+
+
 /* menus */
 
+
+#menus{
+    position: relative;
+    top: 25rem;
+}
+
+/* Styling for the squares grid */
+.squares-grid {
+    margin-top: 1rem;
+  }
+  
+  .square {
+    width: 12rem;
+    height: 100px;
+    background-color: var(--light_green);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Courier Prime", system-ui;
+    align-items: center;
+  }
+  
+  .square:hover {
+    opacity: 0.9;
+  }
+  
+  /* Expanded square */
+  .expanded-square {
+    position: relative;
+    left: 0;
+    bottom: 2rem;
+    width: 100%;
+    height: 35rem;
+    background-color: var(--light_green);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+    z-index: 9999;
+  }
+  
+  .expanded-square.active {
+    display: flex;
+  }
+  
+  .close-btn {
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    color: var(--white);
+    position: relative;
+    bottom: 1rem;
+  }
+  
+  .text-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    color: var(--white);
+  }
+  
+  .text-section p {
+    font-size: 1.65rem;
+    font-family: "Courier Prime", system-ui;
+}
 
 /* terraza */
 
