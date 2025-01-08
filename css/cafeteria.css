@@ -396,7 +396,7 @@ a:link {
     height: 30vh;
     width: 30vh;
     right: 27rem;
-    top: 18rem;
+    top: 17rem;
 }
 
 .cent{
@@ -436,6 +436,51 @@ a:link {
     width: 35vh;
     left: 1rem;
     top: 12rem;
+}
+
+
+#mainModal{
+  z-index: 10;
+}
+
+.main-image {
+  width: 15rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.album-image {
+  max-width: 15rem;
+  border-radius: 50%;
+}
+
+.disc-image {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+  z-index: 999;
+}
+
+.modal-dialog{
+  position: relative;
+  top: 15rem;
+}
+
+.modal-header {
+  background-color: var(--dark_grey);
+  color: var(--white);
 }
 
 .circle-genre-1{
