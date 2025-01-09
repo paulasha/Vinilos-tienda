@@ -1,97 +1,213 @@
-
+// botón flecha 
+function playAnimation() {
+    $('#flecha').attr('src', 'MEDIA/EXTRA/flecha.gif').css('filter', 'sepia(41%) brightness(64%) hue-rotate(23deg) saturate(84%)');
+  }
   
-  document.addEventListener('DOMContentLoaded', () => {
-  const playBtn = document.getElementById('play-btn');
-  const pauseBtn = document.getElementById('pause-btn');
-  const equalizer = document.getElementById('equalizer');
-  const music = document.getElementById('music');
+  function showStatic() {
+    $('#flecha').attr('src', 'MEDIA/EXTRA/flecha-estatica.jpg').css('filter', 'none');
+  }
 
-  // Función para reproducir música
-  playBtn.addEventListener('click', () => {
-    music.play();
-    playBtn.style.display = 'none';
-    pauseBtn.style.display = 'inline-block';
-    equalizer.style.display = 'flex'; // Mostrar ecualizador
-  });
+  // menu que se encoge y redondea al hacer scroll
 
-  // Función para pausar música
-  pauseBtn.addEventListener('click', () => {
-    music.pause();
-    playBtn.style.display = 'inline-block';
-    pauseBtn.style.display = 'none';
-    equalizer.style.display = 'none'; // Ocultar ecualizador
-  });
+const menu = document.getElementById("menu");
+const navbarCollapse = document.getElementById("navbarNav");
 
-  // Reiniciar la interfaz cuando la música termina
-  music.addEventListener('ended', () => {
-    playBtn.style.display = 'inline-block';
-    pauseBtn.style.display = 'none';
-    equalizer.style.display = 'none';
+window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
+ 
+    menu.style.borderRadius = scrollY === 0 ? '0' : '900px';
+
+    if (scrollY > 50) { 
+        menu.classList.add('scrolled');
+    } else {
+        menu.classList.remove('scrolled');
+    }
+});
+
+navbarCollapse.addEventListener('show.bs.collapse', function () {
+    menu.style.borderRadius = "30px";
+});
+
+navbarCollapse.addEventListener('hide.bs.collapse', function () {
+    menu.style.borderRadius = "900px";
+});
+
+
+// scroll indicator
+$(window).scroll(function () {
+  scrollIndicator();
+});
+
+function scrollIndicator() {
+  var winScroll = $(document).scrollTop();
+  var height = $(document).height() - $(window).height();
+  var scrolled = (winScroll / height) * 100;
+  $("#bar").width(scrolled + "%");
+}
+
+
+// menu movil
+const menuItems = document.querySelectorAll('.navbar-nav .nav-item');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    navbarCollapse.classList.remove('show');
   });
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const circles = document.querySelectorAll(".circle");
-  const musicSection = document.getElementById("music-section");
-  const genreText = document.getElementById("genre-text");
-  const vinyl = document.getElementById("vinyl");
-  const audio = new Audio();
+// circle movement
+document.addEventListener('mousemove', (event) => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
 
-  circles.forEach((circle) => {
-    circle.addEventListener("click", () => {
-      const newColor = circle.getAttribute("data-color");
-      const newGenre = circle.getAttribute("data-genre");
-      const newSong = circle.getAttribute("data-song");
+    // Select all the image elements
+    const images = document.querySelectorAll('.artistas img');
 
-      // Cambia el fondo
-      musicSection.style.backgroundColor = newColor;
+    images.forEach((img) => {
+        const rect = img.getBoundingClientRect();
+        const imgCenterX = rect.left + rect.width / 2;
+        const imgCenterY = rect.top + rect.height / 2;
 
-      // Cambia el texto
-      genreText.textContent = newGenre;
+        // Calculate the distance between the mouse and the center of the image
+        const deltaX = mouseX - imgCenterX;
+        const deltaY = mouseY - imgCenterY;
+        const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
 
-      // Cambia la canción
-      audio.src = `music/${newSong}`;
-      audio.play();
+        // Move the image slightly away if the mouse is close
+        if (distance < 150) { // Threshold distance for effect
+            const moveX = (deltaX / distance) * 10; // Scaled movement
+            const moveY = (deltaY / distance) * 10;
+
+            // Apply the transform
+            img.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        } else {
+            // Reset the position when the mouse moves away
+            img.style.transform = '';
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Locomotive Scroll
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+    });
+  
+    // Record click event to extend the section
+    const records = document.querySelectorAll('.record');
+    records.forEach((record) => {
+      record.addEventListener('click', () => {
+        // Toggle 'active' class
+        record.classList.toggle('active');
+  
+        // Ensure only one record is active at a time
+        records.forEach((otherRecord) => {
+          if (otherRecord !== record) {
+            otherRecord.classList.remove('active');
+          }
+        });
+      });
     });
   });
 
-  // Controles para las flechas
-  document.getElementById("prev").addEventListener("click", () => {
-    const activeIndex = Array.from(circles).findIndex(
-      (circle) => circle.getAttribute("data-genre") === genreText.textContent
-    );
-    const prevIndex = (activeIndex - 1 + circles.length) % circles.length;
-    circles[prevIndex].click();
-  });
-
-  document.getElementById("next").addEventListener("click", () => {
-    const activeIndex = Array.from(circles).findIndex(
-      (circle) => circle.getAttribute("data-genre") === genreText.textContent
-    );
-    const nextIndex = (activeIndex + 1) % circles.length;
-    circles[nextIndex].click();
-  });
-});
-
-
-const modelViewerColor = document.querySelector("model-viewer#color");
-
-document.querySelector('#color-controls').addEventListener('click', (event) => {
-  const colorString = event.target.dataset.color;
-  const [material] = modelViewerColor.model.materials;
-  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
-});
-document.querySelectorAll('.circle').forEach(circle => {
-    const color = circle.getAttribute('data-color'); // Leer el atributo data-color
-    circle.style.backgroundColor = color; // Aplicar el color al fondo del círculo
-  });
 
   
-
   
-
- 
-
-
+  document.addEventListener('DOMContentLoaded', () => {
+    const playBtn = document.getElementById('play-btn');
+    const pauseBtn = document.getElementById('pause-btn');
+    const equalizer = document.getElementById('equalizer');
+    const music = document.getElementById('music');
   
+    // Función para reproducir música
+    playBtn.addEventListener('click', () => {
+      music.play();
+      playBtn.style.display = 'none';
+      pauseBtn.style.display = 'inline-block';
+      equalizer.style.display = 'flex'; // Mostrar ecualizador
+    });
+  
+    // Función para pausar música
+    pauseBtn.addEventListener('click', () => {
+      music.pause();
+      playBtn.style.display = 'inline-block';
+      pauseBtn.style.display = 'none';
+      equalizer.style.display = 'none'; // Ocultar ecualizador
+    });
+  
+    // Reiniciar la interfaz cuando la música termina
+    music.addEventListener('ended', () => {
+      playBtn.style.display = 'inline-block';
+      pauseBtn.style.display = 'none';
+      equalizer.style.display = 'none';
+    });
+  });
+  
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const circles = document.querySelectorAll(".circle");
+    const musicSection = document.getElementById("music-section");
+    const genreText = document.getElementById("genre-text");
+    const vinyl = document.getElementById("vinyl");
+    const audio = new Audio();
+  
+    circles.forEach((circle) => {
+      circle.addEventListener("click", () => {
+        const newColor = circle.getAttribute("data-color");
+        const newGenre = circle.getAttribute("data-genre");
+        const newSong = circle.getAttribute("data-song");
+  
+        // Cambia el fondo
+        musicSection.style.backgroundColor = newColor;
+  
+        // Cambia el texto
+        genreText.textContent = newGenre;
+  
+        // Cambia la canción
+        audio.src = `music/${newSong}`;
+        audio.play();
+      });
+    });
+  
+    // Controles para las flechas
+    document.getElementById("prev").addEventListener("click", () => {
+      const activeIndex = Array.from(circles).findIndex(
+        (circle) => circle.getAttribute("data-genre") === genreText.textContent
+      );
+      const prevIndex = (activeIndex - 1 + circles.length) % circles.length;
+      circles[prevIndex].click();
+    });
+  
+    document.getElementById("next").addEventListener("click", () => {
+      const activeIndex = Array.from(circles).findIndex(
+        (circle) => circle.getAttribute("data-genre") === genreText.textContent
+      );
+      const nextIndex = (activeIndex + 1) % circles.length;
+      circles[nextIndex].click();
+    });
+  });
+  
+  
+  const modelViewerColor = document.querySelector("model-viewer#color");
+  
+  document.querySelector('#color-controls').addEventListener('click', (event) => {
+    const colorString = event.target.dataset.color;
+    const [material] = modelViewerColor.model.materials;
+    material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+  });
+  document.querySelectorAll('.circle').forEach(circle => {
+      const color = circle.getAttribute('data-color'); // Leer el atributo data-color
+      circle.style.backgroundColor = color; // Aplicar el color al fondo del círculo
+    });
+  
+    
+  
+    
+  
+   
+  
+  
+    
