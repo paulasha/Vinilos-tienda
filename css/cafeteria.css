@@ -620,6 +620,11 @@ a:link {
 
   @media screen and (max-width: 992px){
 
+    .introtext {
+      left: 9rem;
+      top: 9rem;
+  }
+
     .text-section {
       left: 2rem;
   }
@@ -886,6 +891,11 @@ top: 8rem;
 
   @media screen and (max-width: 768px){
 
+    .introtext {
+      left: 2rem;
+      top: 9rem;
+  }
+
     .text-section {
       left: 2rem;
   }
@@ -1151,9 +1161,295 @@ top: 8rem;
   }
 
 
-
   @media screen and (max-width: 414px){
     
 
+    .introtext {
+      left: 5rem;
+      top: 7rem;
+  }
+
+    .square {
+      height: 7rem;
+      font-size: 0.8rem;
+  }
+
+    .text-section {
+      left: -1rem;
+      width: 19rem;
+      top: 3rem;
+
+  }
+
+  #expanded-2 .text-section {
+    width: 15rem;
+    left: 2rem;
+}
+
+#expanded-3 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+#expanded-4 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+#expanded-5 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+#expanded-6 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+  .black-section {
+    width: 23.2rem;
+}
+
+.black-section-title {
+  font-size: 1.2rem;
+  width: 18rem;
+  left: 8rem;
+  top: 5rem;
+}
+
+#expanded-1 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-1 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-1 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-1 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-2 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-2 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-2 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-2 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-3 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-3 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-3 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-3 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-4 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-4 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-4 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-4 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-5 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-5 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-5 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-5 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-6 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-6 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-6 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-6 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+.main-image {
+  width: 11rem;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  left: 0rem;
+  top: 15rem;
+}
+
+.circle-genre-1 {
+  width: 3rem;
+  height: 3rem;
+  left: 3rem;
+  top: 22rem;
+}
+
+.circle-genre-2 {
+  width: 3rem;
+  height: 3rem;
+  left: 11rem;
+  top: 6rem;
+}
+
+.image-carousel {
+  position: relative;
+  width: 23.2rem;
+  height: 12rem;
+  overflow: hidden;
+  top: 9rem;
+  left: -3rem;
+}
+
+.image-carousel-title{
+  position: relative;
+  left: -2rem;
+  top: 11rem;
+}
+
+.image-carousel-title {
+  font-size: 1.2rem;
+  z-index: 7;
+}
+
+#expanded-1 {
+  height: 115.75rem;
+}
+
+#expanded-2 {
+  height: 142.5rem;
+}
+
+#expanded-3 {
+  height: 128.45rem;
+}
+
+#expanded-4 {
+  height: 132.3rem;
+}
+
+#expanded-5 {
+  height: 130.75rem;
+}
+
+#expanded-6 {
+  height: 142.75rem;
+}
 
   }
