@@ -486,3 +486,119 @@ p {
   margin-right: 4em;
 
 }
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+
+  .circle {
+    width: 80%;
+    height: auto;
+  }
+
+  .description-what {
+    font-size: 1rem;
+    margin: 0 2em;
+    text-align: center;
+  }
+
+  .newsletter-content, .social-media {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .circle:nth-child(1) {
+    width: 250px;
+    height: 250px;
+    top: 30%;
+}
+
+.circle:nth-child(4) {
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  right: 10%;
+  left: 75%;
+}
+}
+
+/* Smartphones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+
+  .vinyl-image {
+    height: auto;
+  }
+
+  .main-title {
+    font-size: 3em;
+  }
+
+  .subscribe-button {
+    font-size: 0.9em;
+  }
+
+  .motorlord-subscribe-form input[type="email"] {
+    width: 90%;
+  }
+
+  .title-what-we-are h1 {
+    font-size: 10em;
+    font-weight: bold;
+    color: #000;
+    line-height: 0;
+    margin-top: 0.8em;
+    margin-right: 1.5em;
+}
+
+.text-overlay-darecords {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 10;
+  white-space: nowrap;
+}
+}
+
+/* Pantallas pequeñas (max-width: 414px) */
+@media screen and (max-width: 414px) {
+  .title {
+    font-size: 1.8rem;
+    margin-top: 8px;
+  }
+
+  .circle-container {
+    padding: 0;
+  }
+
+  .vinyl-image {
+    width: 80%;
+    margin: auto;
+  }
+
+  .description-what {
+    font-size: 0.9rem;
+    padding: 0 1em;
+  }
+
+  .newsletter-content {
+    padding: 1em;
+  }
+
+  .subscribe-button {
+    font-size: 0.8em;
+    padding: 0.5em 1.5em;
+  }
+
+  .motorlord-footer-column {
+    font-size: 0.8rem;
+  }
+}
