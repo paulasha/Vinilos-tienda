@@ -1,0 +1,1455 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+:root {
+    --black:#010101;
+    --white: #fcfcfc;
+    --dark_grey: #303023;
+    --grey: #D3CECE;
+    --turquoise: #256063;
+    --light_green: #698D1C;
+    --dark_green: #445916;
+    --marron: #B47B26;
+    --rojo: #E85333;
+    --naranja: #FF8D00;
+    --amarillo: #F9CA1E;
+  }
+
+.black{
+    background-color: var(--black);
+}
+
+.white{
+    background-color: var(--white);
+}
+
+.dark_grey{
+    background-color: var(--dark_grey);
+}
+
+.grey{
+    background-color: var(--grey);
+}
+
+.turquoise{
+    background-color: var(--turquoise);
+}
+
+.light_green{
+    background-color: var(--light_green);
+}
+
+.dark_green{
+  background-color: var(--dark_green);
+}
+
+.brown{
+    background-color: var(--marron);
+}
+
+.red{
+    background-color: var(--rojo);
+}
+
+.orange{
+    background-color: var(--naranja);
+}
+
+.yellow{
+    background-color: var(--amarillo);
+}
+
+p{
+    font-family: 'Poppins';
+}
+
+/* scroll indicator */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: var(--dark_grey);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.progress-bar {
+    height: 6px;
+    background: var(--grey);
+    width: 0%;
+}
+
+/* menu */
+
+#logo-menu img{
+    width: 50px;
+    height: 50px;
+    animation: spin 10s linear infinite;
+} 
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#menu{
+    transition-duration: 0.3s;
+    background-color: var(--grey);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    z-index: 7;
+}
+
+.navbar-brand img{
+    width: 100%;
+    height: 10vh;
+}
+
+.courier-prime-regular {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+  }
+
+a:visited,
+a:link {
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: var(--white);
+}
+
+#logo-menu, #logo-footer, #logo-menu-movil{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+#logo-menu:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+}
+
+#logo-footer:hover{
+  text-decoration: var(--black);
+}
+
+.nav-item{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.navbar-toggler {
+    outline: none; 
+    border: none; 
+}
+
+  
+.navbar-toggler:focus {
+    box-shadow: none; 
+    outline: none; 
+}
+
+.close-menu{
+  display: none;
+}
+
+.scrolled{
+    width: 80vw;
+    border-radius: 90px;
+    margin-top: 1rem;
+}
+
+/* into */
+
+#intro .container.my-5{
+    position: relative;
+    top: 2rem;
+    height: 5rem;
+}
+
+.marquee-container {
+    position: relative;
+    white-space: nowrap;
+    width: 90rem;
+    height: 9rem;
+}
+  
+  /* Styling for the marquee text */
+  .marquee {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 6.5rem;
+    animation: scroll-left 10s linear infinite;
+    color: var(--dark_grey);
+    font-family: "Climate Crisis", cursive;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+/* Styling for the scroll text */
+.scroll-text-container {
+    position: relative;
+    height: 8rem;
+    overflow: hidden;
+    margin-top: 0rem;
+  }
+  
+  .scroll-text {
+    position: absolute;
+    left: -50%; /* Start off-screen */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark_grey);
+    transition: transform 5s ease-out, opacity 5s ease-out;
+    opacity: 0; /* Invisible initially */
+  }
+  
+  /* When text is in view */
+  .scroll-text.in-view {
+    transform: translateX(50%); /* Move to the center of the screen */
+    opacity: 1; /* Fully visible */
+  }
+  
+  /* When text is out of view */
+  .scroll-text.out-of-view {
+    transform: translateX(-50%); /* Moves back to the left */
+    opacity: 0; /* Fully invisible */
+  }
+
+
+.introtext{
+    position: relative;
+    left: 7rem;
+    top: 4rem;
+    width: 17rem;
+    font-size: 1.2rem;
+}
+
+/* menus */
+
+
+#menus{
+    position: relative;
+    top: 14rem;
+}
+
+/* Styling for the squares grid */
+.squares-grid {
+    margin-top: 1rem;
+  }
+  
+  .square {
+    width: 17rem;
+    height: 7rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 800;
+    align-items: center;
+  }
+  
+  .square:hover {
+    opacity: 0.9;
+  }
+  
+  /* Expanded square */
+  .expanded-square {
+    position: relative;
+    left: 0rem;
+    bottom: 2rem;
+    width: 100%;
+    height: 126.75rem;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+    z-index: 6;
+  }
+  
+  .expanded-square.active {
+    display: flex;
+  }
+  
+  .close-btn {
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    color: var(--white);
+    position: relative;
+    bottom: 1rem;
+  }
+
+  #expanded-2 .text-section{
+    width: 58rem; 
+    left: 8rem;
+  }
+  
+  #expanded-3 .text-section{
+    width: 58rem; 
+    left: 8rem;
+  }
+
+  #expanded-4 .text-section{
+    width: 58rem; 
+    left: 8rem;
+  }
+
+  #expanded-5 .text-section{
+    width: 58rem; 
+    left: 8rem;
+  }
+
+  #expanded-6 .text-section{
+    width: 58rem; 
+    left: 8rem;
+  }
+
+/* .text-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+    color: var(--white);
+    flex-direction: column;
+  } */
+
+  .text-section {
+    color: var(--white);
+    width: 34rem;
+    position: relative;
+    left: 21rem;
+    top: 4rem;
+}
+  
+  .text-section p {
+    font-size: 0.85rem;
+    font-family: 'Poppins';
+}
+
+.text-section p .menu-title{
+    font-size: 2rem;
+}
+
+.black-section {
+    background-color: black;
+    width: 81rem;
+    height: 42rem;
+    position: relative;
+    right: 3rem;
+    top: 12rem;
+  }
+
+.black-section img{
+    border-radius: 50%;
+    position: relative;
+}
+
+.black-section-title{
+    font-size: 2.2rem;
+    color: var(--grey);
+    width: 33rem;
+    font-family: "Climate Crisis", cursive;
+    position: relative;
+    left: 53rem;
+    top: 5rem;
+}
+
+.big_poppa{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.big_poppa_img{
+    height: 20vh;
+    width: 20vh;
+    right: 17rem;
+    top: 8rem;
+}
+
+.bustarhymes{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.bustarhymes_img{
+    height: 30vh;
+    width: 30vh;
+    right: 27rem;
+    top: 17rem;
+}
+
+.cent{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.cent_img{
+    height: 28vh;
+    width: 28vh;
+    left: 30rem;
+    top: 8rem;
+}
+
+.puffdaddy{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.puffdaddy_img{
+    height: 20vh;
+    width: 20vh;
+    left: 18rem;
+    top: 23rem;
+}
+
+.a_tribe_called_quest{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.a_tribe_called_quest_img{
+    height: 35vh;
+    width: 35vh;
+    left: 1rem;
+    top: 12rem;
+}
+
+
+#mainModal{
+  z-index: 10;
+}
+
+.modal-backdrop {
+  /* z-index: 11; */
+  --bs-backdrop-zindex: 0;
+  --bs-backdrop-bg: #000;
+  --bs-backdrop-opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-backdrop-bg);
+}
+
+.main-image {
+  width: 15rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.album-image {
+  max-width: 15rem;
+  border-radius: 50%;
+}
+
+.disc-image {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+  z-index: 999;
+}
+
+.modal-dialog{
+  position: relative;
+  top: 15rem;
+}
+
+.modal-header {
+  background-color: var(--dark_grey);
+  color: var(--white);
+}
+
+.circle-genre-1{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--light_green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 24rem;
+    top: 24rem;
+}
+
+.circle-genre-2{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--light_green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 53rem;
+    top: 4rem;
+}
+
+/* terraza */
+
+.image-carousel {
+    position: relative;
+    width: 62rem;
+    height: 29rem;
+    overflow: hidden;
+    top: 11rem;
+    left: 6rem;
+  }
+
+.image-carousel-title{
+    font-size: 2.2rem;
+    color: var(--grey);
+    width: 33rem;
+    font-family: "Climate Crisis", cursive;
+    position: relative;
+    left: 8rem;
+    top: 16rem;
+    z-index: 7;
+}
+  
+  .carousel-wrapper {
+    width: 100%;
+    height: 150%;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(0 0 0 / 0%);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.5rem;
+  }
+  
+  .carousel-arrow.left-arrow {
+    left: 1rem;
+  }
+  
+  .carousel-arrow.right-arrow {
+    right: 1rem;
+  }
+
+
+/* flecha subir */
+#flecha{
+    width: 48px;
+    border-radius: 900px;
+    background-color: var(--turquoise);
+    box-shadow: 0px 18px 38px -16px var(--black);
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    z-index: 900;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 992px){
+
+    .introtext {
+      left: 9rem;
+      top: 9rem;
+  }
+
+    .text-section {
+      left: 2rem;
+  }
+
+    #expanded-2 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    #expanded-3 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    #expanded-4 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+    
+    #expanded-5 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    #expanded-6 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    .black-section {
+      width: 43.5rem;
+  }
+
+    .black-section-title {
+      left: 16rem;
+    }
+
+    #expanded-1 .big_poppa_img{  
+        height: 15vh;
+        width: 15vh;
+        right: 13rem;
+        top: 8rem;
+    }
+
+    #expanded-1 .bustarhymes_img{  
+      height: 20vh;
+      width: 20vh;
+      right: 15rem;
+      top: 19rem;
+  }
+
+    #expanded-1 .puffdaddy_img{  
+      height: 15vh;
+      width: 15vh;
+      left: 14rem;
+      top: 23rem;
+    }
+
+    #expanded-1 .cent_img{  
+      height: 18vh;
+      width: 18vh;
+      left: 15rem;
+      top: 8rem;
+    }
+
+    #expanded-2 .big_poppa_img{  
+      height: 15vh;
+      width: 15vh;
+      right: 13rem;
+      top: 8rem;
+  }
+
+    #expanded-2 .bustarhymes_img{  
+      height: 20vh;
+      width: 20vh;
+      right: 15rem;
+      top: 19rem;
+    }
+
+    #expanded-2 .puffdaddy_img{  
+    height: 15vh;
+    width: 15vh;
+    left: 14rem;
+    top: 23rem;
+    }
+
+    #expanded-2 .cent_img{  
+    height: 18vh;
+    width: 18vh;
+    left: 15rem;
+    top: 8rem;
+    }
+
+    #expanded-3 .big_poppa_img{  
+      height: 15vh;
+      width: 15vh;
+      right: 13rem;
+      top: 8rem;
+  }
+
+  #expanded-3 .bustarhymes_img{  
+    height: 20vh;
+    width: 20vh;
+    right: 15rem;
+    top: 19rem;
+}
+
+  #expanded-3 .puffdaddy_img{  
+    height: 15vh;
+    width: 15vh;
+    left: 14rem;
+    top: 23rem;
+  }
+
+  #expanded-3 .cent_img{  
+    height: 18vh;
+    width: 18vh;
+    left: 15rem;
+    top: 8rem;
+  }
+
+  #expanded-4 .big_poppa_img{  
+    height: 15vh;
+    width: 15vh;
+    right: 13rem;
+    top: 8rem;
+}
+
+  #expanded-4 .bustarhymes_img{  
+    height: 20vh;
+    width: 20vh;
+    right: 15rem;
+    top: 19rem;
+  }
+
+  #expanded-4 .puffdaddy_img{  
+  height: 15vh;
+  width: 15vh;
+  left: 14rem;
+  top: 23rem;
+  }
+
+  #expanded-4 .cent_img{  
+  height: 18vh;
+  width: 18vh;
+  left: 15rem;
+  top: 8rem;
+  }
+
+  #expanded-5 .big_poppa_img{  
+    height: 15vh;
+    width: 15vh;
+    right: 13rem;
+    top: 8rem;
+}
+
+#expanded-5 .bustarhymes_img{  
+  height: 20vh;
+  width: 20vh;
+  right: 15rem;
+  top: 19rem;
+}
+
+#expanded-5 .puffdaddy_img{  
+  height: 15vh;
+  width: 15vh;
+  left: 14rem;
+  top: 23rem;
+}
+
+#expanded-5 .cent_img{  
+  height: 18vh;
+  width: 18vh;
+  left: 15rem;
+  top: 8rem;
+}
+
+#expanded-6 .big_poppa_img{  
+  height: 15vh;
+  width: 15vh;
+  right: 13rem;
+  top: 8rem;
+}
+
+#expanded-6 .bustarhymes_img{  
+  height: 20vh;
+  width: 20vh;
+  right: 15rem;
+  top: 19rem;
+}
+
+#expanded-6 .puffdaddy_img{  
+height: 15vh;
+width: 15vh;
+left: 14rem;
+top: 23rem;
+}
+
+#expanded-6 .cent_img{  
+height: 18vh;
+width: 18vh;
+left: 15rem;
+top: 8rem;
+}
+
+  .circle-genre-1 {
+    width: 5rem;
+    height: 5rem;
+    left: 14rem;
+    top: 27rem;
+}
+
+  .circle-genre-2 {
+    width: 5rem;
+    height: 5rem;
+    left: 26rem;
+    top: 2rem;
+  }
+
+  .image-carousel-title {
+    font-size: 2.2rem;
+    color: var(--grey);
+    width: 33rem;
+    font-family: "Climate Crisis", cursive;
+    position: relative;
+    left: 8rem;
+    top: 16rem;
+    z-index: 7;
+  }
+
+  .image-carousel {
+    position: relative;
+    width: 37rem;
+    height: 21rem;
+    overflow: hidden;
+    top: 11rem;
+    left: 0rem;
+  }
+
+  #expanded-1 {
+    height: 117.75rem;
+  }
+
+  #expanded-2 {
+    height: 128.75rem;
+  }
+
+  #expanded-3 {
+    height: 121.75rem;
+  }
+
+  #expanded-4 {
+    height: 122.75rem;
+  }
+
+  #expanded-5 {
+    height: 124.75rem;
+  }  
+  
+  #expanded-6{
+    height: 129.75rem;
+  }
+  }
+
+  @media screen and (max-width: 768px){
+
+    .introtext {
+      left: 2rem;
+      top: 9rem;
+  }
+
+    .text-section {
+      left: 2rem;
+  }
+
+    #expanded-2 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    #expanded-3 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    #expanded-4 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+    
+    #expanded-5 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    #expanded-6 .text-section{
+      width: 34rem;
+      left: 2rem;
+    }
+
+    .black-section {
+      width: 43.5rem;
+  }
+
+    .black-section-title {
+      left: 16rem;
+    }
+
+    #expanded-1 .big_poppa_img{  
+        height: 15vh;
+        width: 15vh;
+        right: 13rem;
+        top: 8rem;
+    }
+
+    #expanded-1 .bustarhymes_img{  
+      height: 20vh;
+      width: 20vh;
+      right: 15rem;
+      top: 19rem;
+  }
+
+    #expanded-1 .puffdaddy_img{  
+      height: 15vh;
+      width: 15vh;
+      left: 14rem;
+      top: 23rem;
+    }
+
+    #expanded-1 .cent_img{  
+      height: 18vh;
+      width: 18vh;
+      left: 15rem;
+      top: 8rem;
+    }
+
+    #expanded-2 .big_poppa_img{  
+      height: 15vh;
+      width: 15vh;
+      right: 13rem;
+      top: 8rem;
+  }
+
+    #expanded-2 .bustarhymes_img{  
+      height: 20vh;
+      width: 20vh;
+      right: 15rem;
+      top: 19rem;
+    }
+
+    #expanded-2 .puffdaddy_img{  
+    height: 15vh;
+    width: 15vh;
+    left: 14rem;
+    top: 23rem;
+    }
+
+    #expanded-2 .cent_img{  
+    height: 18vh;
+    width: 18vh;
+    left: 15rem;
+    top: 8rem;
+    }
+
+    #expanded-3 .big_poppa_img{  
+      height: 15vh;
+      width: 15vh;
+      right: 13rem;
+      top: 8rem;
+  }
+
+  #expanded-3 .bustarhymes_img{  
+    height: 20vh;
+    width: 20vh;
+    right: 15rem;
+    top: 19rem;
+}
+
+  #expanded-3 .puffdaddy_img{  
+    height: 15vh;
+    width: 15vh;
+    left: 14rem;
+    top: 23rem;
+  }
+
+  #expanded-3 .cent_img{  
+    height: 18vh;
+    width: 18vh;
+    left: 15rem;
+    top: 8rem;
+  }
+
+  #expanded-4 .big_poppa_img{  
+    height: 15vh;
+    width: 15vh;
+    right: 13rem;
+    top: 8rem;
+}
+
+  #expanded-4 .bustarhymes_img{  
+    height: 20vh;
+    width: 20vh;
+    right: 15rem;
+    top: 19rem;
+  }
+
+  #expanded-4 .puffdaddy_img{  
+  height: 15vh;
+  width: 15vh;
+  left: 14rem;
+  top: 23rem;
+  }
+
+  #expanded-4 .cent_img{  
+  height: 18vh;
+  width: 18vh;
+  left: 15rem;
+  top: 8rem;
+  }
+
+  #expanded-5 .big_poppa_img{  
+    height: 15vh;
+    width: 15vh;
+    right: 13rem;
+    top: 8rem;
+}
+
+#expanded-5 .bustarhymes_img{  
+  height: 20vh;
+  width: 20vh;
+  right: 15rem;
+  top: 19rem;
+}
+
+#expanded-5 .puffdaddy_img{  
+  height: 15vh;
+  width: 15vh;
+  left: 14rem;
+  top: 23rem;
+}
+
+#expanded-5 .cent_img{  
+  height: 18vh;
+  width: 18vh;
+  left: 15rem;
+  top: 8rem;
+}
+
+#expanded-6 .big_poppa_img{  
+  height: 15vh;
+  width: 15vh;
+  right: 13rem;
+  top: 8rem;
+}
+
+#expanded-6 .bustarhymes_img{  
+  height: 20vh;
+  width: 20vh;
+  right: 15rem;
+  top: 19rem;
+}
+
+#expanded-6 .puffdaddy_img{  
+height: 15vh;
+width: 15vh;
+left: 14rem;
+top: 23rem;
+}
+
+#expanded-6 .cent_img{  
+height: 18vh;
+width: 18vh;
+left: 15rem;
+top: 8rem;
+}
+
+  .circle-genre-1 {
+    width: 5rem;
+    height: 5rem;
+    left: 14rem;
+    top: 27rem;
+}
+
+  .circle-genre-2 {
+    width: 5rem;
+    height: 5rem;
+    left: 26rem;
+    top: 2rem;
+  }
+
+  .image-carousel-title {
+    font-size: 2.2rem;
+    color: var(--grey);
+    width: 33rem;
+    font-family: "Climate Crisis", cursive;
+    position: relative;
+    left: 8rem;
+    top: 16rem;
+    z-index: 7;
+  }
+
+  .image-carousel {
+    position: relative;
+    width: 37rem;
+    height: 21rem;
+    overflow: hidden;
+    top: 11rem;
+    left: 0rem;
+  }
+
+  #expanded-1 {
+    height: 117.75rem;
+  }
+
+  #expanded-2 {
+    height: 128.75rem;
+  }
+
+  #expanded-3 {
+    height: 121.75rem;
+  }
+
+  #expanded-4 {
+    height: 122.75rem;
+  }
+
+  #expanded-5 {
+    height: 124.75rem;
+  }  
+  
+  #expanded-6{
+    height: 129.75rem;
+  }
+  }
+
+
+  @media screen and (max-width: 414px){
+    
+
+    .introtext {
+      left: 5rem;
+      top: 7rem;
+  }
+
+    .square {
+      height: 7rem;
+      font-size: 0.8rem;
+  }
+
+    .text-section {
+      left: -1rem;
+      width: 19rem;
+      top: 3rem;
+
+  }
+
+  #expanded-2 .text-section {
+    width: 15rem;
+    left: 2rem;
+}
+
+#expanded-3 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+#expanded-4 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+#expanded-5 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+#expanded-6 .text-section {
+  width: 15rem;
+  left: 2rem;
+}
+
+  .black-section {
+    width: 23.2rem;
+}
+
+.black-section-title {
+  font-size: 1.2rem;
+  width: 18rem;
+  left: 8rem;
+  top: 5rem;
+}
+
+#expanded-1 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-1 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-1 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-1 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-2 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-2 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-2 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-2 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-3 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-3 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-3 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-3 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-4 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-4 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-4 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-4 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-5 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-5 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-5 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-5 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+#expanded-6 .big_poppa_img {
+  height: 10vh;
+  width: 10vh;
+  right: 8rem;
+  top: 11rem;
+}
+
+#expanded-6 .bustarhymes_img {
+  height: 15vh;
+  width: 15vh;
+  right: 6rem;
+  top: 26rem;
+}
+
+#expanded-6 .cent_img {
+  height: 12vh;
+  width: 12vh;
+  left: 8rem;
+  top: 8rem;
+}
+
+#expanded-6 .puffdaddy_img {
+  height: 10vh;
+  width: 10vh;
+  left: 6rem;
+  top: 26rem;
+}
+
+.main-image {
+  width: 11rem;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  left: 0rem;
+  top: 15rem;
+}
+
+.circle-genre-1 {
+  width: 3rem;
+  height: 3rem;
+  left: 3rem;
+  top: 22rem;
+}
+
+.circle-genre-2 {
+  width: 3rem;
+  height: 3rem;
+  left: 11rem;
+  top: 6rem;
+}
+
+.image-carousel {
+  position: relative;
+  width: 23.2rem;
+  height: 12rem;
+  overflow: hidden;
+  top: 9rem;
+  left: -3rem;
+}
+
+.image-carousel-title{
+  position: relative;
+  left: -2rem;
+  top: 11rem;
+}
+
+.image-carousel-title {
+  font-size: 1.2rem;
+  z-index: 7;
+}
+
+#expanded-1 {
+  height: 115.75rem;
+}
+
+#expanded-2 {
+  height: 142.5rem;
+}
+
+#expanded-3 {
+  height: 128.45rem;
+}
+
+#expanded-4 {
+  height: 132.3rem;
+}
+
+#expanded-5 {
+  height: 130.75rem;
+}
+
+#expanded-6 {
+  height: 142.75rem;
+}
+
+  }
