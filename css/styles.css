@@ -566,6 +566,21 @@ p {
   z-index: 10;
   white-space: nowrap;
 }
+
+.circle:nth-child(4) {
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  right: 10%;
+  left: 66%;
+}
+
+.circle:nth-child(5) {
+  width: 170px;
+  height: 170px;
+  bottom: 10%;
+  left: 10%;
+}
 }
 
 /* Pantallas pequeñas (max-width: 414px) */
@@ -601,4 +616,70 @@ p {
   .motorlord-footer-column {
     font-size: 0.8rem;
   }
+
+  .text-overlay-darecords {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.circle:nth-child(6) {
+  width: 140px;
+  height: 140px;
+  top: 10%;
+  right: 10%;
+}
+
+.circle:nth-child(4) {
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  right: 10%;
+  left: 66%;
+}
+
+.title-what-we-are h1 {
+  font-size: 8em;
+  font-weight: bold;
+  color: #000;
+  line-height: 0;
+  margin-top: 0.8em;
+  margin-right: 1.5em;
+}
+
+.description-what {
+  font-size: 0.6em;
+  padding: 0 1em;
+}
+
+.motorlord-social-icons {
+  display: flex
+;
+  gap: 15px;
+  font-size: 10px;
+}
+
+.social-media .icons {
+  display: flex
+;
+  gap: 0em;
+  margin-top: 1em;
+}
+
+.main-title {
+  font-size: 1em;
+}
+
+.motorlord-social-icons {
+  display: flex
+;
+  gap: 15px;
+  font-size: 1px;
+}
 }
