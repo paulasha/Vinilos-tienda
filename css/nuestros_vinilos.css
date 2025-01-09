@@ -465,6 +465,67 @@ a:link {
     opacity: 50%;
 }
 
+
+
+#mainModal{
+    z-index: 10;
+  }
+  
+  .modal-backdrop {
+    /* z-index: 11; */
+    --bs-backdrop-zindex: 0;
+    --bs-backdrop-bg: #000;
+    --bs-backdrop-opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--bs-backdrop-zindex);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-backdrop-bg);
+  }
+  
+  .main-image {
+    width: 15rem;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .album-image {
+    max-width: 15rem;
+    border-radius: 50%;
+  }
+  
+  .disc-image {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+  }
+  
+  .left-section {
+    flex: 1;
+  }
+  
+  .right-section {
+    flex: 2;
+  }
+  
+  .modal-content {
+    border-radius: 0.5rem;
+    z-index: 999;
+  }
+  
+  .modal-dialog{
+    position: relative;
+    top: 15rem;
+  }
+  
+  .modal-header {
+    background-color: var(--dark_grey);
+    color: var(--white);
+  }
+
+
 .losmasvendidos_titulo h2{
     color: var(--grey);
     font-family: 'Climate Crisis', cursive;
