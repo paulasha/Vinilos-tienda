@@ -32,7 +32,7 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const circles = document.querySelectorAll(".circle");
+  const circles = document.querySelectorAll(".circle-music");
   const musicSection = document.getElementById("music-section");
   const genreText = document.getElementById("genre-text");
   const vinyl = document.getElementById("vinyl");
@@ -82,7 +82,7 @@ document.querySelector('#color-controls').addEventListener('click', (event) => {
   const [material] = modelViewerColor.model.materials;
   material.pbrMetallicRoughness.setBaseColorFactor(colorString);
 });
-document.querySelectorAll('.circle').forEach(circle => {
+document.querySelectorAll('.circle-music').forEach(circle => {
     const color = circle.getAttribute('data-color'); // Leer el atributo data-color
     circle.style.backgroundColor = color; // Aplicar el color al fondo del círculo
   });

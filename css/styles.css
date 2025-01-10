@@ -58,7 +58,7 @@ body {
 
 
  
-.circle[data-color] {
+.circle-music[data-color] {
     background-color: var(--circle-color, #fff);
   }
 
@@ -244,7 +244,7 @@ body {
     gap: 10px;
   }
   
-  .circle {
+  .circle-music {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -255,12 +255,12 @@ body {
   
   }
 
-.circle:hover {
+.circle-music:hover {
   transform: scale(1.2); /* Crece un 20% al hacer hover */
   box-shadow: 0px 8px 16pxrgba(0, 0, 0, 0.2); /* Sombra más grande al hacer hover */
 }
   
-  .circle[data-color] {
+  .circle-music[data-color] {
     background-color: var(--circle-color, #fff);
   }
   
