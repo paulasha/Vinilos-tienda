@@ -1,4 +1,4 @@
-* {
+ß* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -183,11 +183,11 @@ a:link {
     width: 100%;
 }
 
-.artistas{
+.artistas-vin{
     height: 112vh;
 }
 
-.artistas img{
+.artistas-vin img{
     border-radius: 50%;
     position: relative;
 }

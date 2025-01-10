@@ -63,7 +63,7 @@ document.addEventListener('mousemove', (event) => {
     const mouseY = event.clientY;
 
     // Select all the image elements
-    const images = document.querySelectorAll('.artistas img');
+    const images = document.querySelectorAll('.artistas-vin img');
 
     images.forEach((img) => {
         const rect = img.getBoundingClientRect();
