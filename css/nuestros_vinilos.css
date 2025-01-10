@@ -1,4 +1,4 @@
-* {
+ß* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -535,6 +535,10 @@ a:link {
 
 /* Index */
 
+#index{
+    height: 40rem;
+}
+
 .index_titulo h2{
     color: var(--black);
     font-family: 'Climate Crisis', cursive;
@@ -565,6 +569,27 @@ a:link {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .rotate-logo{
+    position: relative;
+    left: 76rem;
+    bottom: 26rem;
+  }
+
+ .rotate-logo img{
+    width: 20rem;
+    height: 20rem;
+    animation: spin 10s linear infinite;
+} 
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   
   /* Records Section */
@@ -617,9 +642,10 @@ a:link {
 #catalog #hiphop{
     position: relative;
     top: 4rem;
-    left: 7rem;
+    left: 0rem;
     height: 46rem;
-    margin-right: 7rem;
+    margin-right: 0rem;
+    max-width: 1654px;
 }
 
 #catalog #hiphop .row{
@@ -635,21 +661,21 @@ a:link {
 
 .hiphoprow1{
     position: relative;
-    left: 12rem;
+    left: 26rem;
     top: 2rem;
     width: 57rem;
 }
 
 .hiphoprow2{
     position: relative;
-    left: 32rem;
+    left: 45rem;
     bottom: 38.5rem;
     width: 36rem;
 }
 
 .hiphoprow3{
     position: relative;
-    left: 52rem;
+    left: 64rem;
     bottom: 79.2rem;
     width: 18rem;
 }
@@ -670,9 +696,10 @@ a:link {
 #catalog #reggae{
     position: relative;
     top: 4rem;
-    left: 7rem;
+    left: 0rem;
     height: 46rem;
-    margin-right: 7rem;
+    margin-right: 0rem;
+    max-width: 1654px;
 }
 
 #catalog #reggae .row{
@@ -688,21 +715,21 @@ a:link {
 
 .reggaerow1{
     position: relative;
-    left: 12rem;
+    left: 26rem;
     top: 2rem;
     width: 57rem;
 }
 
 .reggaerow2{
     position: relative;
-    left: 32rem;
+    left: 45rem;
     bottom: 38.5rem;
     width: 36rem;
 }
 
 .reggaerow3{
     position: relative;
-    left: 52rem;
+    left: 64rem;
     bottom: 79.2rem;
     width: 18rem;
 }
@@ -723,9 +750,10 @@ a:link {
 #catalog #rap{
     position: relative;
     top: 4rem;
-    left: 7rem;
+    left: 0rem;
     height: 46rem;
-    margin-right: 7rem;
+    margin-right: 0rem;
+    max-width: 1654px;
 }
 
 #catalog #rap .row{
@@ -741,21 +769,21 @@ a:link {
 
 .raprow1{
     position: relative;
-    left: 12rem;
+    left: 26rem;
     top: 2rem;
     width: 57rem;
 }
 
 .raprow2{
     position: relative;
-    left: 32rem;
+    left: 45rem;
     bottom: 38.5rem;
     width: 36rem;
 }
 
 .raprow3{
     position: relative;
-    left: 52rem;
+    left: 64rem;
     bottom: 79.2rem;
     width: 18rem;
 }
@@ -776,9 +804,10 @@ a:link {
 #catalog #neosoul{
     position: relative;
     top: 4rem;
-    left: 7rem;
+    left: 0rem;
     height: 46rem;
-    margin-right: 7rem;
+    margin-right: 0rem;
+    max-width: 1654px;
 }
 
 #catalog #neosoul .row{
@@ -794,21 +823,21 @@ a:link {
 
 .neosoulrow1{
     position: relative;
-    left: 12rem;
+    left: 26rem;
     top: 2rem;
     width: 57rem;
 }
 
 .neosoulrow2{
     position: relative;
-    left: 32rem;
+    left: 45rem;
     bottom: 38.5rem;
     width: 36rem;
 }
 
 .neosoulrow3{
     position: relative;
-    left: 52rem;
+    left: 64rem;
     bottom: 79.2rem;
     width: 18rem;
 }
@@ -829,9 +858,10 @@ a:link {
 #catalog #funk{
     position: relative;
     top: 4rem;
-    left: 7rem;
+    left: 0rem;
     height: 46rem;
-    margin-right: 7rem;
+    margin-right: 0rem;
+    max-width: 1654px;
 }
 
 #catalog #funk .row{
@@ -847,21 +877,21 @@ a:link {
 
 .funkrow1{
     position: relative;
-    left: 12rem;
+    left: 26rem;
     top: 2rem;
     width: 57rem;
 }
 
 .funkrow2{
     position: relative;
-    left: 32rem;
+    left: 45rem;
     bottom: 38.5rem;
     width: 36rem;
 }
 
 .funkrow3{
     position: relative;
-    left: 52rem;
+    left: 64rem;
     bottom: 79.2rem;
     width: 18rem;
 }
@@ -882,9 +912,10 @@ a:link {
 #catalog #rnb{
     position: relative;
     top: 4rem;
-    left: 7rem;
+    left: 0rem;
     height: 46rem;
-    margin-right: 7rem;
+    margin-right: 0rem;
+    max-width: 1654px;
 }
 
 #catalog #rnb .row{
@@ -900,21 +931,21 @@ a:link {
 
 .rnbrow1{
     position: relative;
-    left: 12rem;
+    left: 26rem;
     top: 2rem;
     width: 57rem;
 }
 
 .rnbrow2{
     position: relative;
-    left: 32rem;
+    left: 45rem;
     bottom: 38.5rem;
     width: 36rem;
 }
 
 .rnbrow3{
     position: relative;
-    left: 52rem;
+    left: 64rem;
     bottom: 79.2rem;
     width: 18rem;
 }
@@ -1050,6 +1081,27 @@ footer {
         width: 45rem;
     }
 
+    .rotate-logo{
+        position: relative;
+        left: 47rem;
+        bottom: 23rem;
+      }
+    
+     .rotate-logo img{
+        width: 12rem;
+        height: 12rem;
+        animation: spin 10s linear infinite;
+    } 
+    
+    @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
     /* Catalog */
     #catalog #hiphop {
         position: relative;
@@ -1060,21 +1112,22 @@ footer {
 
     #catalog #hiphop {
         height: 38rem;
+        left: 0rem;
     }
 
     .hiphoprow1 {
-        left: 4rem;
+        left: 10rem;
         width: 48rem;
     }
 
     .hiphoprow2 {
-        left: 18rem;
+        left: 26rem;
         bottom: 32.5rem;
         width: 30rem;
     }
 
     .hiphoprow3 {
-        left: 32rem;
+        left: 41rem;
         bottom: 66.9rem;
         width: 15rem;
     }
@@ -1088,21 +1141,22 @@ footer {
 
     #catalog #reggae {
         height: 38rem;
+        left: 0rem;
     }
 
     .reggaerow1 {
-        left: 4rem;
+        left: 10rem;
         width: 48rem;
     }
 
     .reggaerow2 {
-        left: 18rem;
+        left: 26rem;
         bottom: 32.5rem;
         width: 30rem;
     }
 
     .reggaerow3 {
-        left: 32rem;
+        left: 41rem;
         bottom: 66.9rem;
         width: 15rem;
     }
@@ -1116,21 +1170,22 @@ footer {
 
     #catalog #rap {
         height: 38rem;
+        left: 0rem;
     }
 
     .raprow1 {
-        left: 4rem;
+        left: 10rem;
         width: 48rem;
     }
 
     .raprow2 {
-        left: 18rem;
+        left: 26rem;
         bottom: 32.5rem;
         width: 30rem;
     }
 
     .raprow3 {
-        left: 32rem;
+        left: 41rem;
         bottom: 66.9rem;
         width: 15rem;
     }
@@ -1144,21 +1199,22 @@ footer {
 
     #catalog #neosoul {
         height: 38rem;
+        left: 0rem;
     }
 
     .neosoulrow1 {
-        left: 4rem;
+        left: 10rem;
         width: 48rem;
     }
 
     .neosoulrow2 {
-        left: 18rem;
+        left: 26rem;
         bottom: 32.5rem;
         width: 30rem;
     }
 
     .neosoulrow3 {
-        left: 32rem;
+        left: 41rem;
         bottom: 66.9rem;
         width: 15rem;
     }
@@ -1172,21 +1228,22 @@ footer {
 
     #catalog #funk {
         height: 38rem;
+        left: 0rem;
     }
 
     .funkrow1 {
-        left: 4rem;
+        left: 10rem;
         width: 48rem;
     }
 
     .funkrow2 {
-        left: 18rem;
+        left: 26rem;
         bottom: 32.5rem;
         width: 30rem;
     }
 
     .funkrow3 {
-        left: 32rem;
+        left: 41rem;
         bottom: 66.9rem;
         width: 15rem;
     }
@@ -1200,21 +1257,22 @@ footer {
 
     #catalog #rnb {
         height: 38rem;
+        left: 0rem;
     }
 
     .rnbrow1 {
-        left: 4rem;
+        left: 10rem;
         width: 48rem;
     }
 
     .rnbrow2 {
-        left: 18rem;
+        left: 26rem;
         bottom: 32.5rem;
         width: 30rem;
     }
 
     .rnbrow3 {
-        left: 32rem;
+        left: 41rem;
         bottom: 66.9rem;
         width: 15rem;
     }
@@ -1245,18 +1303,39 @@ footer {
         width: 36rem;
     }
 
+    .rotate-logo{
+        position: relative;
+        left: 38rem;
+        bottom: 21rem;
+      }
+    
+     .rotate-logo img{
+        width: 8rem;
+        height: 8rem;
+        animation: spin 10s linear infinite;
+    } 
+    
+    @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
     #catalog #hiphop {
         height: 35rem;
-        left: 6rem;
+        left: 0rem;
     }
 
     .hiphoprow1 {
-        left: 1rem;
+        left: 7rem;
         width: 40rem;
     }
 
     .hiphoprow2 {
-        left: 10.5rem;
+        left: 18.5rem;
         bottom: 27.5rem;
         width: 26rem;
     }
@@ -1266,7 +1345,7 @@ footer {
     }
 
     .hiphoprow3 {
-        left: 20rem;
+        left: 30rem;
         bottom: 56.9rem;
         width: 13rem;
     }
@@ -1277,16 +1356,16 @@ footer {
 
     #catalog #reggae {
         height: 35rem;
-        left: 6rem;
+        left: 0rem;
     }
 
     .reggaerow1 {
-        left: 1rem;
+        left: 7rem;
         width: 40rem;
     }
 
     .reggaerow2 {
-        left: 10.5rem;
+        left: 18.5rem;
         bottom: 27.5rem;
         width: 26rem;
     }
@@ -1296,7 +1375,7 @@ footer {
     }
 
     .reggaerow3 {
-        left: 20rem;
+        left: 30rem;
         bottom: 56.9rem;
         width: 13rem;
     }
@@ -1307,16 +1386,16 @@ footer {
 
     #catalog #rap {
         height: 35rem;
-        left: 6rem;
+        left: 0rem;
     }
 
     .raprow1 {
-        left: 1rem;
+        left: 7rem;
         width: 40rem;
     }
 
     .raprow2 {
-        left: 10.5rem;
+        left: 18.5rem;
         bottom: 27.5rem;
         width: 26rem;
     }
@@ -1326,7 +1405,7 @@ footer {
     }
 
     .raprow3 {
-        left: 20rem;
+        left: 30rem;
         bottom: 56.9rem;
         width: 13rem;
     }
@@ -1337,16 +1416,16 @@ footer {
 
     #catalog #neosoul {
         height: 35rem;
-        left: 6rem;
+        left: 0rem;
     }
 
     .neosoulrow1 {
-        left: 1rem;
+        left: 7rem;
         width: 40rem;
     }
 
     .neosoulrow2 {
-        left: 10.5rem;
+        left: 18.5rem;
         bottom: 27.5rem;
         width: 26rem;
     }
@@ -1356,7 +1435,7 @@ footer {
     }
 
     .neosoulrow3 {
-        left: 20rem;
+        left: 30rem;
         bottom: 56.9rem;
         width: 13rem;
     }
@@ -1367,16 +1446,16 @@ footer {
 
     #catalog #funk {
         height: 35rem;
-        left: 6rem;
+        left: 0rem;
     }
 
     .funkrow1 {
-        left: 1rem;
+        left: 7rem;
         width: 40rem;
     }
 
     .funkrow2 {
-        left: 10.5rem;
+        left: 18.5rem;
         bottom: 27.5rem;
         width: 26rem;
     }
@@ -1386,7 +1465,7 @@ footer {
     }
 
     .funkrow3 {
-        left: 20rem;
+        left: 30rem;
         bottom: 56.9rem;
         width: 13rem;
     }
@@ -1397,16 +1476,16 @@ footer {
 
     #catalog #rnb {
         height: 35rem;
-        left: 6rem;
+        left: 0rem;
     }
 
     .rnbrow1 {
-        left: 1rem;
+        left: 7rem;
         width: 40rem;
     }
 
     .rnbrow2 {
-        left: 10.5rem;
+        left: 18.5rem;
         bottom: 27.5rem;
         width: 26rem;
     }
@@ -1416,7 +1495,7 @@ footer {
     }
 
     .rnbrow3 {
-        left: 20rem;
+        left: 30rem;
         bottom: 56.9rem;
         width: 13rem;
     }
@@ -1445,8 +1524,34 @@ footer {
     }
 
     .genre {
-        width: 17rem;
+        width: 25rem;
         font-size: 1.15rem;
+    }
+
+    .rotate-logo{
+        position: relative;
+        left: 10rem;
+        bottom: -2rem;
+      }
+    
+     .rotate-logo img{
+        width: 6rem;
+        height: 6rem;
+        animation: spin 10s linear infinite;
+    } 
+    
+    @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+    [data-scroll-container] {
+        overflow: hidden;
+        height: 40rem;
     }
 
     .record img {
@@ -1463,7 +1568,7 @@ footer {
     }
 
     .hiphoprow1 {
-        left: 1rem;
+        left: 2rem;
         width: 34rem;
     }
 
@@ -1472,7 +1577,7 @@ footer {
     }
 
     .hiphoprow2 {
-        left: 8rem;
+        left: 9rem;
         bottom: 19.32rem;
         width: 22rem;
     }
@@ -1482,7 +1587,7 @@ footer {
     }
 
     .hiphoprow3 {
-        left: 15rem;
+        left: 16rem;
         bottom: 40.55rem;
         width: 9rem;
     }
@@ -1493,7 +1598,7 @@ footer {
     }
 
     .reggaerow1 {
-        left: 1rem;
+        left: 2rem;
         width: 34rem;
     }
 
@@ -1502,7 +1607,7 @@ footer {
     }
 
     .reggaerow2 {
-        left: 8rem;
+        left: 9rem;
         bottom: 19.32rem;
         width: 22rem;
     }
@@ -1512,7 +1617,7 @@ footer {
     }
 
     .reggaerow3 {
-        left: 15rem;
+        left: 16rem;
         bottom: 40.55rem;
         width: 9rem;
     }
@@ -1523,7 +1628,7 @@ footer {
     }
 
     .raprow1 {
-        left: 1rem;
+        left: 2rem;
         width: 34rem;
     }
 
@@ -1532,7 +1637,7 @@ footer {
     }
 
     .raprow2 {
-        left: 8rem;
+        left: 9rem;
         bottom: 19.32rem;
         width: 22rem;
     }
@@ -1542,7 +1647,7 @@ footer {
     }
 
     .raprow3 {
-        left: 15rem;
+        left: 16rem;
         bottom: 40.55rem;
         width: 9rem;
     }
@@ -1553,7 +1658,7 @@ footer {
     }
 
     .neosoulrow1 {
-        left: 1rem;
+        left: 2rem;
         width: 34rem;
     }
 
@@ -1562,7 +1667,7 @@ footer {
     }
 
     .neosoulrow2 {
-        left: 8rem;
+        left: 9rem;
         bottom: 19.32rem;
         width: 22rem;
     }
@@ -1572,7 +1677,7 @@ footer {
     }
 
     .neosoulrow3 {
-        left: 15rem;
+        left: 16rem;
         bottom: 40.55rem;
         width: 9rem;
     }
@@ -1583,7 +1688,7 @@ footer {
     }
 
     .funkrow1 {
-        left: 1rem;
+        left: 2rem;
         width: 34rem;
     }
 
@@ -1592,7 +1697,7 @@ footer {
     }
 
     .funkrow2 {
-        left: 8rem;
+        left: 9rem;
         bottom: 19.32rem;
         width: 22rem;
     }
@@ -1602,7 +1707,7 @@ footer {
     }
 
     .funkrow3 {
-        left: 15rem;
+        left: 16rem;
         bottom: 40.55rem;
         width: 9rem;
     }
@@ -1613,7 +1718,7 @@ footer {
     }
 
     .rnbrow1 {
-        left: 1rem;
+        left: 2rem;
         width: 34rem;
     }
 
@@ -1622,7 +1727,7 @@ footer {
     }
 
     .rnbrow2 {
-        left: 8rem;
+        left: 9rem;
         bottom: 19.32rem;
         width: 22rem;
     }
@@ -1632,7 +1737,7 @@ footer {
     }
 
     .rnbrow3 {
-        left: 15rem;
+        left: 16rem;
         bottom: 40.55rem;
         width: 9rem;
     }
