@@ -618,6 +618,104 @@ a:link {
     transition: 0.3s;
   }
 
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    margin-top: 12em;
+  }
+  
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  footer h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer h4 {
+    color: var(--naranja);
+    margin-bottom: 10px;
+  }
+  
+  footer ul  {
+  list-style: none;
+  padding-left: 0;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  footer ul li {
+    padding-top: 1em;
+  }
+  
+  footer ul li a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  footer ul li a:hover {
+    color:var(--naranja);
+  }
+  
+  footer form {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer form input[type="email"] {
+    padding: 10px;
+    border: none;
+    width: 70%;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  footer form button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer form button:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  footer .footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+
+
   @media screen and (max-width: 992px){
 
     .introtext {
@@ -891,6 +989,14 @@ top: 8rem;
 
   @media screen and (max-width: 768px){
 
+    footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .introtext {
       left: 2rem;
       top: 9rem;
@@ -1162,7 +1268,14 @@ top: 8rem;
 
 
   @media screen and (max-width: 414px){
-    
+    footer .footer-container {
+        display: flex ;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
 
     .introtext {
       left: 5rem;
