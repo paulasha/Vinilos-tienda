@@ -1209,7 +1209,7 @@ top: 8rem;
 }
 
   .black-section {
-    width: 23.2rem;
+    width: 23.45rem;
 }
 
 .black-section-title {
@@ -1412,20 +1412,17 @@ top: 8rem;
 
 .image-carousel {
   position: relative;
-  width: 23.2rem;
+  width: 23.4rem;
   height: 12rem;
   overflow: hidden;
-  top: 9rem;
-  left: -3rem;
+  top: 10.2rem;
+  left: -2.97rem;
 }
 
 .image-carousel-title{
   position: relative;
   left: -2rem;
-  top: 11rem;
-}
-
-.image-carousel-title {
+  top: 10rem;
   font-size: 1.2rem;
   z-index: 7;
 }
@@ -1443,7 +1440,7 @@ top: 8rem;
 }
 
 #expanded-4 {
-  height: 132.3rem;
+  height: 133.5rem;
 }
 
 #expanded-5 {
