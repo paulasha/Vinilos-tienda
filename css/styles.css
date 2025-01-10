@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-body {
-    font-family: 'Poppins';
+* {
     margin: 0;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
     scroll-behavior: smooth;
+    line-height: 1.6;
+  
     
   }
   
+  
+  :root {
+      --black:#010101;
+      --white: #fcfcfc;
+      --dark_grey: #303023;
+      --grey: #D3CECE;
+      --turquoise: #256063;
+      --light_green: #698D1C;
+      --dark_green: #445916;
+      --marron: #B47B26;
+      --rojo: #E85333;
+      --naranja: #FF8D00;
+      --amarillo: #F9CA1E;
+    }
+
+     
  #content-3D{
    
     overflow-x: hidden;
@@ -314,15 +333,551 @@ body {
   
 
 
-
-
-@media only screen and (max-width: 600px) {
-#genre-text {
-    font-size: 4em;
-    font-weight: bold;
+/* ARTISTAS */
+/* Contenedor principal */
+/* Los mas Vendidos */
+.ARTISTAS_titulo h2 {
     color: #ffffff;
-    padding-top: 1em;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    position: relative;
+    bottom: -7rem;
+    right: 1rem; 
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.artistas{
+    height: 112vh;
+    background-color: var(--black);
+    width: 100%;
+}
+
+.artistas img{
+    border-radius: 50%;
+    position: relative;
+}
+
+.big_poppa{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.big_poppa_img{
+    height: 15vh;
+    width: 15vh;
+    right: 37rem;
+    top: 4rem;
+}
+
+.leon_thomas{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.leon_thomas_img{
+    height: 26vh;
+    width: 26vh;
+    right: 44rem;
+    top: 11rem;
+}
+
+.usher{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.usher_img{
+    height: 14vh;
+    width: 14vh;
+    right: 34rem;
+    top: 22rem;
+}
+
+.sade{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.sade_img{
+    height: 30vh;
+    width: 30vh;
+    right: 42rem;
+    top: 29rem;
+}
+
+.a_tribe_called_quest{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.a_tribe_called_quest_img{
+    height: 26vh;
+    width: 26vh;
+    right: 26.5rem;
+    top: 9rem;
+}
+
+.justin_bieber{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.justin_bieber_img{
+    height: 14vh;
+    width: 14vh;
+    right: 17.5rem;
+    top: 21rem;
+}
+
+.kendrick_lamar{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.kendrick_lamar_img{
+    height: 20vh;
+    width: 20vh;
+    right: 23.5rem;
+    top: 27.5rem;
+}
+
+.cent{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.cent_img{
+    height: 18vh;
+    width: 18vh;
+    right: 14rem;
+    top: 6.5rem;
+}
+
+.sza{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.sza_img{
+    height: 38vh;
+    width: 38vh;
+    right: 3rem;
+    top: 13.5rem;
+}
+
+.frank_ocean{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.frank_ocean_img{
+    height: 22vh;
+    width: 22vh;
+    right: 12rem;
+    top: 32rem;
+}
+
+.earth_wind_fire{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.earth_wind_fire_img{
+    height: 24vh;
+    width: 24vh;
+    right: -11rem;
+    top: 6rem;
+}
+
+.bob_marley{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.bob_marley_img{
+    height: 36vh;
+    width: 36vh;
+    right: -17rem;
+    top: 18.5rem;
+}
+
+.tyler_the_creator{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.tyler_the_creator_img{
+    height: 22vh;
+    width: 22vh;
+    right: -2.75rem;
+    top: 34.25rem;
+}
+
+.eminem{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.eminem_img{
+    height: 18vh;
+    width: 18vh;
+    right: -24rem;
+    top: 3rem;
+}
+
+.prince{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.prince_img{
+    height: 16vh;
+    width: 16vh;
+    right: -28rem;
+    top: 12.5rem;
+}
+
+.stevie_wonder{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.stevie_wonder_img{
+    height: 20vh;
+    width: 20vh;
+    right: -33rem;
+    top: 20.5rem;
+}
+
+.amy_winehouse{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.amy_winehouse_img{
+    height: 22vh;
+    width: 22vh;
+    right: -32rem;
+    top: 32.5rem;
+}
+
+.lauren_hill{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.lauren_hill_img{
+    height: 38vh;
+    width: 38vh;
+    right: -43rem;
+    top: 2.5rem;
+}
+
+.erykah_badu{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.erykah_badu_img{
+    height: 22vh;
+    width: 22vh;
+    right: -45rem;
+    top: 23.5rem;
+}
+
+.mf_doom{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.mf_doom_img{
+    height: 16vh;
+    width: 16vh;
+    right: -43.5rem;
+    top: 35.5rem;
+}
+
+.img-bl{
+    transition: .2s; 
+}
+
+.img-bl-hover:hover{
+    opacity: 50%;
 }
 
 
+/* Contenedor de DA-RECORDS */
+.container-darecords {
+  background-color: #d1cec9; /* Fondo específico para DA-RECORDS */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.image-text-darecords {
+  position: relative;
+  display: inline-block;
+}
+
+.vinyl-image {
+  display: block;
+  width: 600px;
+  height: 600px;
+}
+
+.text-overlay-darecords {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.text-overlay-darecords .black {
+  color: #000; /* Negro para D y S */
+}
+
+.text-overlay-darecords .light {
+  color: #f2eaea; /* Color claro para A-RECORD */
+}
+
+.arrow-darecords {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #000;
+}
+
+#about_us{
+    background-color: var(--amarillo);
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto ;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    
+    
+   
+ }
+
+ .left-section-about{
+     
+     padding: 2em;
+ }
+ .left-section-about > h1:first-child{
+     
+    font-size: 5em;
+ }
+ .left-section-about > h1:nth-child(2) {
+    font-size: 5em;
+    color: #0000006e;
+    font-weight: bold;
+}
+ .right-section-about{
+     
+    padding: 4em;
+ }
+ .right-section-about > p{
+     margin: 0%;
+     margin-top: 3em;
+    
+ }
+
+
+
+  
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+  }
+  
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  footer h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer h4 {
+    color: var(--naranja);
+    margin-bottom: 10px;
+  }
+  
+  footer ul  {
+  list-style: none;
+  padding-left: 0;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  footer ul li {
+    padding-top: 1em;
+  }
+  
+  footer ul li a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  footer ul li a:hover {
+    color:var(--naranja);
+  }
+  
+  footer form {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer form input[type="email"] {
+    padding: 10px;
+    border: none;
+    width: 70%;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  footer form button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer form button:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  footer .footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+
+@media screen and (max-width: 992px) {
+    #about_us {
+        background-color: var(--amarillo);
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        color: var(--black);
+        display: flex ;
+        align-items: center;
+        padding: 2em;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Smartphones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .left-section-about > h1:nth-child(2) {
+        font-size: 4em;
+        color: #0000006e;
+        font-weight: bold;
+    }
+    .left-section-about > h1:first-child {
+        font-size: 4em;
+    }
+    footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #darecords{
+        display: none;
+    }
+   
+
+  
+}
+
+/* Pantallas pequeñas (max-width: 414px) */
+@media screen and (max-width: 414px) {
+    .right-section-about {
+        padding: 1em;
+    }
+    .left-section-about > h1:nth-child(2) {
+        font-size: 3em;
+        color: #0000006e;
+        font-weight: bold;
+    }
+    .left-section-about > h1:first-child {
+        font-size: 3em;
+    }
+    footer .footer-container {
+        display: flex ;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
+
+    
+ 
+}  
+
+@media only screen and (max-width: 600px) {
+    #genre-text {
+        font-size: 4em;
+        font-weight: bold;
+        color: #ffffff;
+        padding-top: 1em;
+    }
 }
