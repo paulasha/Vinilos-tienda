@@ -716,6 +716,42 @@ footer {
   
 
 
+  @media screen and (max-width: 1400px){
+    .black-section-title {
+      font-size: 2.2rem;
+      color: var(--grey);
+      width: 32rem;
+      font-family: "Climate Crisis", cursive;
+      position: relative;
+      left: 27rem;
+      top: 5rem;
+    }
+
+  
+    #expanded-2 .text-section {
+        width: 35rem;
+        left: 8rem;
+    }
+    #expanded-3 .text-section {
+        width: 35rem;
+        left: 8rem;
+    }
+    #expanded-4 .text-section {
+        width: 35rem;
+        left: 8rem;
+    }
+    #expanded-5 .text-section {
+        width: 35rem;
+        left: 8rem;
+    }
+    #expanded-6 .text-section {
+        width: 35rem;
+        left: 8rem;
+    }
+  }
+
+
+  
   @media screen and (max-width: 992px){
 
     .introtext {
