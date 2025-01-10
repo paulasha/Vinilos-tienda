@@ -897,242 +897,244 @@ top: 8rem;
   }
 
     .text-section {
-      left: 2rem;
+      left: 0rem;
+      width: 26rem;
   }
 
     #expanded-2 .text-section{
-      width: 34rem;
-      left: 2rem;
+      width: 27rem;
+      left: 0rem;
     }
 
     #expanded-3 .text-section{
-      width: 34rem;
-      left: 2rem;
+      width: 27rem;
+      left: 0rem;
     }
 
     #expanded-4 .text-section{
-      width: 34rem;
-      left: 2rem;
+      width: 27rem;
+      left: 0rem;
     }
     
     #expanded-5 .text-section{
-      width: 34rem;
-      left: 2rem;
+      width: 27rem;
+      left: 0rem;
     }
 
     #expanded-6 .text-section{
-      width: 34rem;
-      left: 2rem;
+      width: 27rem;
+      left: 0rem;
     }
 
     .black-section {
-      width: 43.5rem;
+      width: 32.25rem;
   }
 
     .black-section-title {
-      left: 16rem;
+      left: 1rem;
+      top: 4rem;
     }
 
     #expanded-1 .big_poppa_img{  
-        height: 15vh;
-        width: 15vh;
-        right: 13rem;
-        top: 8rem;
+      height: 15vh;
+      width: 15vh;
+      right: 11rem;
+      top: 8rem;
     }
 
     #expanded-1 .bustarhymes_img{  
-      height: 20vh;
-      width: 20vh;
-      right: 15rem;
-      top: 19rem;
+      height: 16vh;
+      width: 16vh;
+      right: 11rem;
+      top: 22rem;
   }
 
     #expanded-1 .puffdaddy_img{  
       height: 15vh;
       width: 15vh;
-      left: 14rem;
+      left: 11rem;
       top: 23rem;
     }
 
     #expanded-1 .cent_img{  
       height: 18vh;
       width: 18vh;
-      left: 15rem;
-      top: 8rem;
+      left: 11rem;
+      top: 5rem;
     }
 
     #expanded-2 .big_poppa_img{  
       height: 15vh;
       width: 15vh;
-      right: 13rem;
+      right: 11rem;
       top: 8rem;
   }
 
     #expanded-2 .bustarhymes_img{  
-      height: 20vh;
-      width: 20vh;
-      right: 15rem;
-      top: 19rem;
+      height: 16vh;
+      width: 16vh;
+      right: 11rem;
+      top: 22rem;
     }
 
     #expanded-2 .puffdaddy_img{  
-    height: 15vh;
-    width: 15vh;
-    left: 14rem;
-    top: 23rem;
+      height: 15vh;
+      width: 15vh;
+      left: 11rem;
+      top: 23rem;
     }
 
     #expanded-2 .cent_img{  
-    height: 18vh;
-    width: 18vh;
-    left: 15rem;
-    top: 8rem;
+      height: 18vh;
+      width: 18vh;
+      left: 11rem;
+      top: 5rem;
     }
 
     #expanded-3 .big_poppa_img{  
       height: 15vh;
       width: 15vh;
-      right: 13rem;
+      right: 11rem;
       top: 8rem;
   }
 
   #expanded-3 .bustarhymes_img{  
-    height: 20vh;
-    width: 20vh;
-    right: 15rem;
-    top: 19rem;
+    height: 16vh;
+    width: 16vh;
+    right: 11rem;
+    top: 22rem;
 }
 
   #expanded-3 .puffdaddy_img{  
     height: 15vh;
     width: 15vh;
-    left: 14rem;
+    left: 11rem;
     top: 23rem;
   }
 
   #expanded-3 .cent_img{  
     height: 18vh;
     width: 18vh;
-    left: 15rem;
-    top: 8rem;
+    left: 11rem;
+    top: 5rem;
   }
 
   #expanded-4 .big_poppa_img{  
     height: 15vh;
     width: 15vh;
-    right: 13rem;
+    right: 11rem;
     top: 8rem;
 }
 
   #expanded-4 .bustarhymes_img{  
-    height: 20vh;
-    width: 20vh;
-    right: 15rem;
-    top: 19rem;
+    height: 16vh;
+    width: 16vh;
+    right: 11rem;
+    top: 22rem;
   }
 
   #expanded-4 .puffdaddy_img{  
-  height: 15vh;
-  width: 15vh;
-  left: 14rem;
-  top: 23rem;
+    height: 15vh;
+    width: 15vh;
+    left: 11rem;
+    top: 23rem;
   }
 
   #expanded-4 .cent_img{  
-  height: 18vh;
-  width: 18vh;
-  left: 15rem;
-  top: 8rem;
+    height: 18vh;
+    width: 18vh;
+    left: 11rem;
+    top: 5rem;
   }
 
   #expanded-5 .big_poppa_img{  
     height: 15vh;
     width: 15vh;
-    right: 13rem;
+    right: 11rem;
     top: 8rem;
 }
 
 #expanded-5 .bustarhymes_img{  
-  height: 20vh;
-  width: 20vh;
-  right: 15rem;
-  top: 19rem;
+  height: 16vh;
+  width: 16vh;
+  right: 11rem;
+  top: 22rem;
 }
 
 #expanded-5 .puffdaddy_img{  
   height: 15vh;
   width: 15vh;
-  left: 14rem;
+  left: 11rem;
   top: 23rem;
 }
 
 #expanded-5 .cent_img{  
   height: 18vh;
   width: 18vh;
-  left: 15rem;
-  top: 8rem;
+  left: 11rem;
+  top: 5rem;
 }
 
 #expanded-6 .big_poppa_img{  
   height: 15vh;
   width: 15vh;
-  right: 13rem;
+  right: 11rem;
   top: 8rem;
 }
 
 #expanded-6 .bustarhymes_img{  
-  height: 20vh;
-  width: 20vh;
-  right: 15rem;
-  top: 19rem;
+  height: 16vh;
+  width: 16vh;
+  right: 11rem;
+  top: 22rem;
 }
 
 #expanded-6 .puffdaddy_img{  
-height: 15vh;
-width: 15vh;
-left: 14rem;
-top: 23rem;
+  height: 15vh;
+  width: 15vh;
+  left: 11rem;
+  top: 23rem;
 }
 
 #expanded-6 .cent_img{  
-height: 18vh;
-width: 18vh;
-left: 15rem;
-top: 8rem;
+  height: 18vh;
+  width: 18vh;
+  left: 11rem;
+  top: 5rem;
 }
 
   .circle-genre-1 {
     width: 5rem;
     height: 5rem;
-    left: 14rem;
+    left: 10rem;
     top: 27rem;
 }
 
   .circle-genre-2 {
     width: 5rem;
     height: 5rem;
-    left: 26rem;
-    top: 2rem;
+    left: 16rem;
+    top: 1rem;
   }
 
   .image-carousel-title {
     font-size: 2.2rem;
     color: var(--grey);
-    width: 33rem;
+    width: 20rem;
     font-family: "Climate Crisis", cursive;
     position: relative;
-    left: 8rem;
-    top: 16rem;
+    left: -0.5rem;
+    top: 12rem;
     z-index: 7;
   }
 
   .image-carousel {
     position: relative;
-    width: 37rem;
-    height: 21rem;
+    width: 27rem;
+    height: 15rem;
     overflow: hidden;
-    top: 11rem;
-    left: 0rem;
+    top: 12rem;
+    left: -0.5rem;
   }
 
   #expanded-1 {
@@ -1152,11 +1154,11 @@ top: 8rem;
   }
 
   #expanded-5 {
-    height: 124.75rem;
+    height: 121.75rem;
   }  
   
   #expanded-6{
-    height: 129.75rem;
+    height: 131.75rem;
   }
   }
 
