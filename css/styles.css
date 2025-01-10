@@ -332,7 +332,10 @@
 }
   
 
-
+#artist{
+  overflow-x: hidden;
+  max-width: 100%;
+}
 /* ARTISTAS */
 /* Contenedor principal */
 /* Los mas Vendidos */
@@ -347,8 +350,7 @@
     right: 1rem; 
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
-    max-width: 100%;
+   
 }
 
 .artistas{
@@ -632,10 +634,18 @@
 
 
 /* Contenedor de DA-RECORDS */
+#darecords{
+    width: 100vw;
+    height: 100vh;
+    background-color: #d1cec9;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+}
 .container-darecords {
-  background-color: #d1cec9; /* Fondo específico para DA-RECORDS */
+
   text-align: center;
-  padding: 50px 0;
+
 }
 
 .image-text-darecords {
@@ -669,11 +679,7 @@
   color: #f2eaea; /* Color claro para A-RECORD */
 }
 
-.arrow-darecords {
-  margin-top: 20px;
-  font-size: 3rem;
-  color: #000;
-}
+
 
 #about_us{
     background-color: var(--amarillo);
@@ -687,28 +693,24 @@
     
     
    
- }
-
- .left-section-about{
-     
-     padding: 2em;
- }
- .left-section-about > h1:first-child{
-     
-    font-size: 5em;
- }
- .left-section-about > h1:nth-child(2) {
-    font-size: 5em;
-    color: #0000006e;
-    font-weight: bold;
 }
- .right-section-about{
-     
-    padding: 4em;
- }
+
+
+
+
  .right-section-about > p{
      margin: 0%;
      margin-top: 3em;
+    
+ }
+ .right-section-about{
+   
+        left: 40%;
+ 
+        width: 50%;
+        margin: 0 auto;
+      
+    
     
  }
 
@@ -820,6 +822,28 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
+
+    .vinyl-image {
+        display: block;
+        width: 500px;
+        height: 500px;
+    }
+    .text-overlay-darecords {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 10;
+        white-space: nowrap;
+    }
+    .right-section-about {
+        left: 40%;
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 /* Smartphones (max-width: 768px) */
@@ -839,16 +863,36 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    #darecords{
-        display: none;
+
+    .right-section-about {
+        left: 40%;
+        width: 90%;
+        margin: 0 auto;
     }
+    .text-overlay-darecords {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 10;
+        white-space: nowrap;
+    }
+    .vinyl-image {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+   
    
 
   
 }
 
 /* Pantallas pequeñas (max-width: 414px) */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
     .right-section-about {
         padding: 1em;
     }
@@ -867,6 +911,23 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+    .vinyl-image {
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-overlay-darecords {
+       display: none;
+    }
+
+    .right-section-about {
+        left: 40%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
    
 
     
