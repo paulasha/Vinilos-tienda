@@ -2,144 +2,323 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+
+  
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #d1cec9; /* Fondo general gris claro */
-}
 
+:root {
+    --black:#010101;
+    --white: #fcfcfc;
+    --dark_grey: #303023;
+    --grey: #D3CECE;
+    --turquoise: #256063;
+    --light_green: #698D1C;
+    --dark_green: #445916;
+    --marron: #B47B26;
+    --rojo: #E85333;
+    --naranja: #FF8D00;
+    --amarillo: #F9CA1E;
+  }
 
 
 /* ARTISTAS */
 /* Contenedor principal */
-.container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+/* Los mas Vendidos */
+.ARTISTAS_titulo h2 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    position: relative;
+    bottom: -7rem;
+    right: 1rem; 
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
-/* Título */
-.title {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  text-align: center;
-  color: #000000;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  z-index: 10;
-  margin-top: 20px;
+.artistas{
+    height: 112vh;
+    background-color: var(--black);
+    width: 100%;
 }
 
-/* Contenedor de círculos */
-.circle-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.artistas img{
+    border-radius: 50%;
+    position: relative;
 }
 
-.image-circle:hover {
-  transform: scale(1.1); /* Agranda la imagen al 110% */
-  transition: transform 0.3s ease-in-out; /* Suaviza el efecto */
-} 
-
-/* Círculos base */
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #000000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.big_poppa{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
 }
 
-/* Círculos con colores */
-
-/* Círculos con imágenes */
-.image-circle {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2;
+.big_poppa_img{
+    height: 15vh;
+    width: 15vh;
+    right: 37rem;
+    top: 4rem;
 }
 
-/* Distribución y tamaños (aleatorio para cada círculo) */
-.circle:nth-child(1) {
-  width: 300px;
-  height: 300px;
-  top: 30%;
+.leon_thomas{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
 }
 
-.circle:nth-child(2) {
-  width: 160px;
-  height: 160px;
-  top: 20%;
-  left: 35%;
+.leon_thomas_img{
+    height: 26vh;
+    width: 26vh;
+    right: 44rem;
+    top: 11rem;
 }
 
-.circle:nth-child(3) {
-  width: 120px;
-  height: 120px;
-  bottom: 20%;
-  right: 25%;
+.usher{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
 }
 
-.circle:nth-child(4) {
-  width: 180px;
-  height: 180px;
-  top: 50%;
-  right: 10%;
-  left: 82%;
+.usher_img{
+    height: 14vh;
+    width: 14vh;
+    right: 34rem;
+    top: 22rem;
 }
 
-.circle:nth-child(5) {
-  width: 170px;
-  height: 170px;
-  bottom: 10%;
-  left: 35%;
+.sade{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
 }
 
-.circle:nth-child(6) {
-  width: 200px;
-  height: 200px;
-  top: 10%;
-  right: 10%;
+.sade_img{
+    height: 30vh;
+    width: 30vh;
+    right: 42rem;
+    top: 29rem;
 }
 
-.circle:nth-child(7) {
-  width: 130px;
-  height: 130px;
-  bottom: 40%;
-  right: 35%;
+.a_tribe_called_quest{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
 }
 
-.circle:nth-child(8) {
-  width: 200px;
-  height: 200px;
-  top: 60%;
-  left: 20%;
+.a_tribe_called_quest_img{
+    height: 26vh;
+    width: 26vh;
+    right: 26.5rem;
+    top: 9rem;
 }
 
-.circle:nth-child(9) {
-  width: 80px;
-  height: 80px;
-  bottom: 15%;
-  right: 10%;
+.justin_bieber{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
 }
 
-.circle:nth-child(10) {
-  width: 110px;
-  height: 110px;
-  top: 20%;
-  left: 60%;
+.justin_bieber_img{
+    height: 14vh;
+    width: 14vh;
+    right: 17.5rem;
+    top: 21rem;
 }
 
-.circle:nth-child(11) {
-  width: 150px;
-  height: 150px;
-  top: 70%;
-  left: 40%;
+.kendrick_lamar{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.kendrick_lamar_img{
+    height: 20vh;
+    width: 20vh;
+    right: 23.5rem;
+    top: 27.5rem;
+}
+
+.cent{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.cent_img{
+    height: 18vh;
+    width: 18vh;
+    right: 14rem;
+    top: 6.5rem;
+}
+
+.sza{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.sza_img{
+    height: 38vh;
+    width: 38vh;
+    right: 3rem;
+    top: 13.5rem;
+}
+
+.frank_ocean{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.frank_ocean_img{
+    height: 22vh;
+    width: 22vh;
+    right: 12rem;
+    top: 32rem;
+}
+
+.earth_wind_fire{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.earth_wind_fire_img{
+    height: 24vh;
+    width: 24vh;
+    right: -11rem;
+    top: 6rem;
+}
+
+.bob_marley{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.bob_marley_img{
+    height: 36vh;
+    width: 36vh;
+    right: -17rem;
+    top: 18.5rem;
+}
+
+.tyler_the_creator{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.tyler_the_creator_img{
+    height: 22vh;
+    width: 22vh;
+    right: -2.75rem;
+    top: 34.25rem;
+}
+
+.eminem{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.eminem_img{
+    height: 18vh;
+    width: 18vh;
+    right: -24rem;
+    top: 3rem;
+}
+
+.prince{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.prince_img{
+    height: 16vh;
+    width: 16vh;
+    right: -28rem;
+    top: 12.5rem;
+}
+
+.stevie_wonder{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.stevie_wonder_img{
+    height: 20vh;
+    width: 20vh;
+    right: -33rem;
+    top: 20.5rem;
+}
+
+.amy_winehouse{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.amy_winehouse_img{
+    height: 22vh;
+    width: 22vh;
+    right: -32rem;
+    top: 32.5rem;
+}
+
+.lauren_hill{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.lauren_hill_img{
+    height: 38vh;
+    width: 38vh;
+    right: -43rem;
+    top: 2.5rem;
+}
+
+.erykah_badu{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.erykah_badu_img{
+    height: 22vh;
+    width: 22vh;
+    right: -45rem;
+    top: 23.5rem;
+}
+
+.mf_doom{
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+}
+
+.mf_doom_img{
+    height: 16vh;
+    width: 16vh;
+    right: -43.5rem;
+    top: 35.5rem;
+}
+
+.img-bl{
+    transition: .2s; 
+}
+
+.img-bl-hover:hover{
+    opacity: 50%;
 }
 
 
@@ -187,499 +366,200 @@ body {
   color: #000;
 }
 
-/* Contenedor de WHAT WE ARE */
-.container-what-we-are {
-  background-color: #e4e8f0; /* Fondo diferente para esta sección */
-  padding: 50px 0;
-  position: relative;
-  text-align: center;
-  height: 830px;
-}
+#about_us{
+    background-color: var(--amarillo);
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto ;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    
+    
+   
+ }
 
-.circles-what {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+ .left-section-about{
+     
+     padding: 2em;
+ }
+ .left-section-about > h1:first-child{
+     
+    font-size: 5em;
+ }
+ .left-section-about > h1:nth-child(2) {
+    font-size: 5em;
+    color: #0000006e;
+    font-weight: bold;
 }
+ .right-section-about{
+     
+    padding: 4em;
+ }
+ .right-section-about > p{
+     margin: 0%;
+     margin-top: 3em;
+    
+ }
 
-.circle-brown {
-  position: absolute;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  background-color: #a9712e;
-  top: 15%;
-  left: 10%;
-}
-
-.circle-green {
-  position: absolute;
-  border-radius: 50%;
-  width:300px;
-  height: 300px;
-  background-color: #577d3f;
-  bottom: 10%;
-  left: 5%;
-}
-
-.circle-orange {
-  position: absolute;
-  border-radius: 50%;
-  width: 190px;
-  height: 190px;
-  background-color: #f08525;
-  top: 20%;
-  right: 10%;
-}
-
-p {
-  margin-top: 7em;
-  margin-bottom: 1rem;
-  margin-right: 4em;
-  margin-left: 18em;
-}
-
-.title-what-we-are {
-  position: relative;
-  z-index: 2;
-}
-
-.title-what-we-are h1 {
-  font-size: 11em;
-  font-weight: bold;
-  color: #000;
-  line-height: 0;
-  margin-top: 0.8em;
-  margin-right: 2em;
-}
-
-.description-what {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #333;
-  text-align: left;
-  z-index: 2;
-  position: relative;
-}
-
-.description-what .highlight-what {
-  font-weight: bold;
-}
 
 
   
-/* Sección principal de newsletter */
-#newsletter-section {
-  display: flex;
-  justify-content: space-between;
-  background-color: #b5c4ed;
-  color: white;
-  width: 100%;
-  height: 60vh;
-}
-
-.h2, h2 {
-  font-size: calc(1.325rem + .9vw);
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-style: italic;
-}
-
-.newsletter-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 50%;
-  margin-left: 2.5em;
-  padding-top: 2em;
-}
-
-.main-title {
-  font-size: 4em;
-  font-weight: 700;
-  margin-top: 0.5em;
-  color: #fff;
-}
-
-.subscribe-button {
-  margin-top: 1.5em;
-  padding: 0.8em 2em;
-  font-size: 1em;
-  font-weight: bold;
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.subscribe-button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Columna de redes sociales */
-.social-media {
-  background-color:#f08525;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4em;
-  width: 40%;
-}
-
-.social-media .icons {
-  display: flex;
-  gap: 1.2em;
-  margin-top: 1em;
-}
-
-.social-media .icons a {
-  font-size: 2em;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.social-media .icons a:hover {
-  color: #000;
-}
 
 
-
-/* Estilos para el pie de página Snowfest */
-#footer-vinilos {
-  background-color:  #d1cec9;
-  color: #fff;
-  font-size: 14px;
-}
-
-.vinilos-footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 3em;
-}
-
-.vinilos-subscribe-section {
-  flex: 1 1 100%;
-  margin-bottom: 30px;
-}
-
-.vinilos-subscribe-section h2 {
-  color: #000000;
-  font-size: 25px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.motorlord-subscribe-form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 1em;
-}
-
-.motorlord-subscribe-form input[type="email"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  width: 400px;
-  font-size: 14px;
-}
-
-.motorlord-subscribe-form button {
-  background-color: #ff8b00;
-  color: #fff;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-/* Alinear las secciones en fila */
-.motorlord-links-section {
-  display: flex;
-  justify-content: space-around;
-  flex: 1 1 100%;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.motorlord-footer-column {
-  flex: 1;
-}
-
-.motorlord-footer-column h3 {
-  font-size: 16px;
-  color: #000000;
-  margin-bottom: 10px;
-}
-
-.motorlord-footer-column ul {
+footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+  }
+  
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  footer h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer h4 {
+    color: var(--naranja);
+    margin-bottom: 10px;
+  }
+  
+  footer ul  {
   list-style: none;
-  padding: 0;
-}
+  padding-left: 0;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  footer ul li {
+    padding-top: 1em;
+  }
+  
+  footer ul li a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  footer ul li a:hover {
+    color:var(--naranja);
+  }
+  
+  footer form {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer form input[type="email"] {
+    padding: 10px;
+    border: none;
+    width: 70%;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  footer form button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer form button:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  footer .footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
 
-.motorlord-footer-column ul li {
-  margin-bottom: 5px;
-}
-
-.motorlord-footer-column ul li a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.motorlord-footer-column ul li a:hover {
-  color: #ff8b00;
-}
-
-.motorlord-payment-icons, .motorlord-social-icons {
-  display: flex;
-  gap: 15px;
-  font-size: 24px;
-}
-
-.motorlord-payment-icons i, .motorlord-social-icons i {
-  color: #fff;
-}
-
-.motorlord-payment-icons i:hover, .motorlord-icons i:hover {
-  color: #ff8b00;
-}
-
-
-
-/* Sección inferior del footer */
-.motorlord-footer-bottom {
-  border-top: 1px solid #555;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 12px;
-  color: #777;
-  margin-top: 50px;
-}
-
-.motorlord-footer-bottom strong {
-  color: #fff;
-  font-weight: bold;
-}
-
-.footer-brand img{
-  width: 500px;
-
-}
-.footer-brand{
-padding: 1em;
-}
-
-p {
-  margin-top: 7em;
-  margin-bottom: 1rem;
-  margin-right: 4em;
-
-}
 @media screen and (max-width: 992px) {
-  .title {
-    font-size: 2.5rem;
-    margin-top: 15px;
-  }
-
-  .circle {
-    width: 80%;
-    height: auto;
-  }
-
-  .description-what {
-    font-size: 1rem;
-    margin: 0 2em;
-    text-align: center;
-  }
-
-  .newsletter-content, .social-media {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .circle:nth-child(1) {
-    width: 250px;
-    height: 250px;
-    top: 30%;
-}
-
-.circle:nth-child(4) {
-  width: 180px;
-  height: 180px;
-  top: 50%;
-  right: 10%;
-  left: 75%;
-}
+    #about_us {
+        background-color: var(--amarillo);
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        color: var(--black);
+        display: flex ;
+        align-items: center;
+        padding: 2em;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* Smartphones (max-width: 768px) */
 @media screen and (max-width: 768px) {
-  .title {
-    font-size: 2rem;
-    margin-top: 10px;
-  }
+    .left-section-about > h1:nth-child(2) {
+        font-size: 4em;
+        color: #0000006e;
+        font-weight: bold;
+    }
+    .left-section-about > h1:first-child {
+        font-size: 4em;
+    }
+    footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #darecords{
+        display: none;
+    }
+   
 
-  .vinyl-image {
-    height: auto;
-  }
-
-  .main-title {
-    font-size: 3em;
-  }
-
-  .subscribe-button {
-    font-size: 0.9em;
-  }
-
-  .motorlord-subscribe-form input[type="email"] {
-    width: 90%;
-  }
-
-  .title-what-we-are h1 {
-    font-size: 10em;
-    font-weight: bold;
-    color: #000;
-    line-height: 0;
-    margin-top: 0.8em;
-    margin-right: 1.5em;
-}
-
-.text-overlay-darecords {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6.5em;
-  font-weight: bold;
-  text-transform: uppercase;
-  z-index: 10;
-  white-space: nowrap;
-}
-
-.circle:nth-child(4) {
-  width: 180px;
-  height: 180px;
-  top: 50%;
-  right: 10%;
-  left: 66%;
-}
-
-.circle:nth-child(5) {
-  width: 170px;
-  height: 170px;
-  bottom: 10%;
-  left: 10%;
-}
+  
 }
 
 /* Pantallas pequeñas (max-width: 414px) */
 @media screen and (max-width: 414px) {
-  .title {
-    font-size: 1.8rem;
-    margin-top: 8px;
-  }
+    .right-section-about {
+        padding: 1em;
+    }
+    .left-section-about > h1:nth-child(2) {
+        font-size: 3em;
+        color: #0000006e;
+        font-weight: bold;
+    }
+    .left-section-about > h1:first-child {
+        font-size: 3em;
+    }
+    footer .footer-container {
+        display: flex ;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
 
-  .circle-container {
-    padding: 0;
-  }
-
-  .vinyl-image {
-    width: 80%;
-    margin: auto;
-  }
-
-  .description-what {
-    font-size: 0.9rem;
-    padding: 0 1em;
-  }
-
-  .newsletter-content {
-    padding: 1em;
-  }
-
-  .subscribe-button {
-    font-size: 0.8em;
-    padding: 0.5em 1.5em;
-  }
-
-  .motorlord-footer-column {
-    font-size: 0.8rem;
-  }
-
-  .text-overlay-darecords {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 10;
-    white-space: nowrap;
-}
-
-.circle:nth-child(6) {
-  width: 140px;
-  height: 140px;
-  top: 10%;
-  right: 10%;
-}
-
-.circle:nth-child(4) {
-  width: 140px;
-  height: 140px;
-  top: 50%;
-  right: 10%;
-  left: 66%;
-}
-
-.title-what-we-are h1 {
-  font-size: 8em;
-  font-weight: bold;
-  color: #000;
-  line-height: 0;
-  margin-top: 0.8em;
-  margin-right: 1.5em;
-}
-
-.description-what {
-  font-size: 0.6em;
-  padding: 0 1em;
-}
-
-.motorlord-social-icons {
-  display: flex
-;
-  gap: 15px;
-  font-size: 10px;
-}
-
-.social-media .icons {
-  display: flex
-;
-  gap: 0em;
-  margin-top: 1em;
-}
-
-.main-title {
-  font-size: 1em;
-}
-
-.motorlord-social-icons {
-  display: flex
-;
-  gap: 15px;
-  font-size: 1px;
-}
+    
+ 
 }
